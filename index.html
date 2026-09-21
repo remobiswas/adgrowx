@@ -204,7 +204,7 @@
 
                         <div class="hud-card hud-right float-card-delay">
                             <div class="ad-sim-header">
-                                <div class="sim-avatar">R</div>
+                                <div class="sim-avatar"><img src="assets/testimonials/arijit.jpg" alt="Remo Biswas" class="sim-avatar-img"></div>
                                 <div>
                                     <strong>Remo Biswas • AdGrowX</strong>
                                     <small>Sponsored • Meta Ads Specialist</small>
@@ -212,8 +212,12 @@
                             </div>
                             <p class="sim-copy">Scale your customer acquisition with structured Meta campaigns. Direct WhatsApp booking below! 👇</p>
                             <div class="sim-banner">
-                                <h4>Predictable Business Growth</h4>
-                                <span>Strategy • Creative • Conversions</span>
+                                <img src="assets/hud/meta_ad.jpg" alt="Meta Ad Creative" class="sim-banner-img">
+                                <div class="sim-banner-content">
+                                    <span class="ad-pill-tag"><i class="fa-solid fa-arrow-trend-up"></i> 4.6X ROAS</span>
+                                    <h4>Predictable Business Growth</h4>
+                                    <span>Strategy • Creative • Conversions</span>
+                                </div>
                             </div>
                             <div class="sim-footer">
                                 <span>adgrowx.com</span>
@@ -273,12 +277,17 @@
                     <div class="scene-hud-container hud-dual-flank">
                         <div class="hud-card hud-left float-card">
                             <div class="yt-screen-frame">
+                                <img src="assets/hud/yt_thumb.jpg" alt="YouTube Ad Creative" class="yt-thumb-bg">
+                                <div class="yt-play-overlay">
+                                    <div class="yt-play-btn"><i class="fa-solid fa-play"></i></div>
+                                </div>
                                 <div class="yt-top-badge"><i class="fa-brands fa-youtube text-red"></i> In-Stream Ad • 0:15 / 1:30</div>
                                 <div class="yt-hook-box">
                                     <h3>"How We Scaled Enquiries 3X Using Strategic Video Ads"</h3>
                                     <p>Case study breakdown by Remo Biswas</p>
                                     <span class="btn-capsule btn-gradient btn-sm">WATCH CASE STUDY</span>
                                 </div>
+                                <div class="yt-progress-bar"><span style="width: 25%;"></span></div>
                             </div>
                         </div>
 
@@ -362,6 +371,7 @@
 
                         <div class="hud-card hud-right float-card-delay">
                             <div class="reel-mockup">
+                                <img src="assets/hud/reel_thumb.jpg" alt="Viral Reel Creative" class="reel-thumb-bg">
                                 <div class="reel-overlay">
                                     <span class="reel-tag"><i class="fa-solid fa-play"></i> REEL // MOTION</span>
                                     <h4>Viral Ad Creatives That Convert</h4>
@@ -369,6 +379,10 @@
                                         <span><i class="fa-solid fa-heart text-red"></i> 24.8K</span>
                                         <span><i class="fa-solid fa-comment"></i> 1.4K</span>
                                         <span><i class="fa-solid fa-share"></i> 3.2K</span>
+                                    </div>
+                                    <div class="reel-audio-track">
+                                        <i class="fa-solid fa-music"></i>
+                                        <span>Original Audio • Remo Biswas / AdGrowX</span>
                                     </div>
                                 </div>
                             </div>
@@ -400,9 +414,11 @@
                                 <div class="window-url">adgrowx.com/client-funnel</div>
                             </div>
                             <div class="browser-inner-mock">
-                                <h4>High-Converting Funnels</h4>
-                                <p>Turn cold clicks into warm WhatsApp conversations.</p>
-                                <span class="mock-cta">Direct Enquiry Action</span>
+                                <img src="assets/hud/web_funnel.jpg" alt="Web Funnel Interface" class="browser-thumb-img">
+                                <div class="browser-inner-overlay">
+                                    <div class="browser-badge-live"><i class="fa-solid fa-bolt text-gold"></i> High-Converting Funnel</div>
+                                    <span class="mock-cta">Direct Enquiry Action <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -415,6 +431,9 @@
                         <div class="hud-card hud-left float-card">
                             <div class="actor-badge text-gold"><i class="fa-solid fa-palette"></i> GRAPHIC DESIGN SUITE</div>
                             <h3>High-CTR Marketing Assets</h3>
+                            <div class="design-preview-box">
+                                <img src="assets/hud/graphic_design.jpg" alt="Graphic Design Creative" class="design-preview-thumb">
+                            </div>
                             <p>Custom-crafted social banners, carousel ads, and brand identity systems that capture attention in fast-scrolling feeds.</p>
                             <div class="targeting-pills-row">
                                 <span>Ad Banners</span>
@@ -617,23 +636,64 @@
          ABOUT REMO BISWAS (Screenshot 4 Inspiration)
          ========================================================================== -->
     <section class="about-section" id="about">
-        <!-- Floating Playful 3D Badges (Flower & Heart from Screenshot 4) -->
-        <div class="floating-shape shape-flower-purple" aria-hidden="true">
-            <svg viewBox="0 0 100 100" class="svg-flower">
-                <circle cx="50" cy="50" r="16" fill="#facc15"/>
-                <circle cx="50" cy="20" r="16" fill="#a855f7"/>
-                <circle cx="80" cy="50" r="16" fill="#a855f7"/>
-                <circle cx="50" cy="80" r="16" fill="#a855f7"/>
-                <circle cx="20" cy="50" r="16" fill="#a855f7"/>
-                <circle cx="28" cy="28" r="14" fill="#9333ea"/>
-                <circle cx="72" cy="28" r="14" fill="#9333ea"/>
-                <circle cx="72" cy="72" r="14" fill="#9333ea"/>
-                <circle cx="28" cy="72" r="14" fill="#9333ea"/>
+        <!-- Floating Playful 3D Badges (Screenshot 4: Heart, Flower, Glass Splash, Crystal Prism) -->
+        <div class="floating-shape shape-splash-glass" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="svg-splash">
+                <defs>
+                    <linearGradient id="splashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+                        <stop offset="50%" stop-color="#818cf8" stop-opacity="0.7"/>
+                        <stop offset="100%" stop-color="#c084fc" stop-opacity="0.5"/>
+                    </linearGradient>
+                </defs>
+                <path d="M50 15 C65 15 85 30 80 55 C75 75 55 88 40 82 C22 75 15 55 25 35 C32 20 40 15 50 15 Z" fill="url(#splashGrad)"/>
+                <ellipse cx="42" cy="35" rx="10" ry="6" fill="#ffffff" opacity="0.6"/>
+            </svg>
+        </div>
+        <div class="floating-shape shape-crystal-prism" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="svg-prism">
+                <polygon points="50,12 88,38 88,82 50,65" fill="#3b82f6" opacity="0.85"/>
+                <polygon points="50,12 12,38 12,82 50,65" fill="#60a5fa" opacity="0.95"/>
+                <polygon points="12,82 50,65 88,82 50,96" fill="#1d4ed8" opacity="0.75"/>
+                <polygon points="50,12 50,65 88,38" fill="#93c5fd" opacity="0.5"/>
             </svg>
         </div>
         <div class="floating-shape shape-heart-red" aria-hidden="true">
             <svg viewBox="0 0 100 100" class="svg-heart">
-                <path d="M50 85 L15 50 C5 35 15 15 35 15 C44 15 48 20 50 25 C52 20 56 15 65 15 C85 15 95 35 85 50 Z" fill="#ef4444"/>
+                <defs>
+                    <radialGradient id="heartGrad" cx="35%" cy="35%" r="65%">
+                        <stop offset="0%" stop-color="#ff4d5e"/>
+                        <stop offset="60%" stop-color="#e11d48"/>
+                        <stop offset="100%" stop-color="#881337"/>
+                    </radialGradient>
+                </defs>
+                <path d="M50 85 L15 50 C5 35 15 15 35 15 C44 15 48 20 50 25 C52 20 56 15 65 15 C85 15 95 35 85 50 Z" fill="url(#heartGrad)"/>
+                <ellipse cx="32" cy="28" rx="8" ry="4" fill="#ffffff" opacity="0.45" transform="rotate(-30 32 28)"/>
+            </svg>
+        </div>
+        <div class="floating-shape shape-flower-purple" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="svg-flower">
+                <defs>
+                    <radialGradient id="petalGrad" cx="50%" cy="30%" r="70%">
+                        <stop offset="0%" stop-color="#c084fc"/>
+                        <stop offset="60%" stop-color="#9333ea"/>
+                        <stop offset="100%" stop-color="#581c87"/>
+                    </radialGradient>
+                    <radialGradient id="centerGrad" cx="40%" cy="40%" r="60%">
+                        <stop offset="0%" stop-color="#fef08a"/>
+                        <stop offset="60%" stop-color="#facc15"/>
+                        <stop offset="100%" stop-color="#ca8a04"/>
+                    </radialGradient>
+                </defs>
+                <circle cx="50" cy="22" r="16" fill="url(#petalGrad)"/>
+                <circle cx="78" cy="50" r="16" fill="url(#petalGrad)"/>
+                <circle cx="50" cy="78" r="16" fill="url(#petalGrad)"/>
+                <circle cx="22" cy="50" r="16" fill="url(#petalGrad)"/>
+                <circle cx="30" cy="30" r="14" fill="url(#petalGrad)"/>
+                <circle cx="70" cy="30" r="14" fill="url(#petalGrad)"/>
+                <circle cx="70" cy="70" r="14" fill="url(#petalGrad)"/>
+                <circle cx="30" cy="70" r="14" fill="url(#petalGrad)"/>
+                <circle cx="50" cy="50" r="17" fill="url(#centerGrad)"/>
             </svg>
         </div>
 
@@ -937,8 +997,20 @@
                     </div>
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
-                            <div class="stack-preview-img img-p1"><div class="img-badge">Meta Ads + Reel Strategy</div></div>
-                            <div class="stack-preview-img img-p2"><div class="img-badge">WhatsApp Bookings Funnel</div></div>
+                            <div class="stack-hero-preview">
+                                <img src="assets/projects/bistro.jpg" alt="Kolkata Gourmet Bistro & Lounge" class="project-hero-img">
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <img src="assets/projects/p1.jpg" alt="Dining Experience" class="project-thumb-img">
+                                    <div class="img-badge">Meta Ads + Reels</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <img src="assets/projects/p2.jpg" alt="WhatsApp Reservations" class="project-thumb-img">
+                                    <div class="img-badge">WhatsApp Funnel</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="stack-details-row">
                             <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Weekend Dining Bookings</strong></div>
@@ -961,8 +1033,20 @@
                     </div>
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
-                            <div class="stack-preview-img img-p3"><div class="img-badge">Google Search Ads</div></div>
-                            <div class="stack-preview-img img-p4"><div class="img-badge">High Conversion Landing Page</div></div>
+                            <div class="stack-hero-preview">
+                                <img src="assets/projects/dental.jpg" alt="Aura Skin & Dental Aesthetics" class="project-hero-img">
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <img src="assets/projects/p3.jpg" alt="Modern Clinic" class="project-thumb-img">
+                                    <div class="img-badge">Google Search Ads</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <img src="assets/projects/p4.jpg" alt="Consultation Funnel" class="project-thumb-img">
+                                    <div class="img-badge">Landing Page CRO</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="stack-details-row">
                             <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">High-Ticket Appointments</strong></div>
@@ -985,8 +1069,20 @@
                     </div>
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
-                            <div class="stack-preview-img img-p5"><div class="img-badge">Catalog Dynamic Ads</div></div>
-                            <div class="stack-preview-img img-p6"><div class="img-badge">Instagram Shopping Strategy</div></div>
+                            <div class="stack-hero-preview">
+                                <img src="assets/projects/handloom.jpg" alt="Sutradhar D2C Handloom Boutique" class="project-hero-img">
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <img src="assets/projects/p5.jpg" alt="Silk Saree Collection" class="project-thumb-img">
+                                    <div class="img-badge">Catalog Dynamic Ads</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <img src="assets/projects/p6.jpg" alt="Textile Art" class="project-thumb-img">
+                                    <div class="img-badge">Instagram Shopping</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="stack-details-row">
                             <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Pan-India E-Commerce Scale</strong></div>
@@ -1009,8 +1105,20 @@
                     </div>
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
-                            <div class="stack-preview-img img-p7"><div class="img-badge">Webinar & Course Funnel</div></div>
-                            <div class="stack-preview-img img-p8"><div class="img-badge">YouTube Ads Distribution</div></div>
+                            <div class="stack-hero-preview">
+                                <img src="assets/projects/academy.jpg" alt="Apex Civil Academy" class="project-hero-img">
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <img src="assets/projects/p7.jpg" alt="CAD Studio" class="project-thumb-img">
+                                    <div class="img-badge">Webinar & Funnel</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <img src="assets/projects/p8.jpg" alt="Architecture" class="project-thumb-img">
+                                    <div class="img-badge">YouTube Ads</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="stack-details-row">
                             <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Student Admissions & Enrollments</strong></div>
@@ -1043,7 +1151,9 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
-                        <div class="testi-avatar-circle">AS</div>
+                        <div class="testi-avatar-circle">
+                            <img src="assets/testimonials/arijit.jpg" alt="Arijit Sen" class="avatar-photo">
+                        </div>
                         <div class="testi-meta">
                             <h4>Arijit Sen</h4>
                             <span>Owner, Kolkata Cafe & Restaurant</span>
@@ -1059,7 +1169,9 @@
 
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
-                        <div class="testi-avatar-circle">MR</div>
+                        <div class="testi-avatar-circle">
+                            <img src="assets/testimonials/moumita.jpg" alt="Moumita Roy" class="avatar-photo">
+                        </div>
                         <div class="testi-meta">
                             <h4>Moumita Roy</h4>
                             <span>Founder, Silk Route Fashion Boutique</span>
@@ -1075,7 +1187,9 @@
 
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
-                        <div class="testi-avatar-circle">SG</div>
+                        <div class="testi-avatar-circle">
+                            <img src="assets/testimonials/sourav.jpg" alt="Sourav Ghosh" class="avatar-photo">
+                        </div>
                         <div class="testi-meta">
                             <h4>Sourav Ghosh</h4>
                             <span>Real Estate Consultant</span>
@@ -1091,7 +1205,9 @@
 
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
-                        <div class="testi-avatar-circle">AD</div>
+                        <div class="testi-avatar-circle">
+                            <img src="assets/testimonials/ananya.jpg" alt="Ananya Das" class="avatar-photo">
+                        </div>
                         <div class="testi-meta">
                             <h4>Ananya Das</h4>
                             <span>Director, Derma Glow Aesthetic Clinic</span>
@@ -1107,7 +1223,9 @@
 
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
-                        <div class="testi-avatar-circle">SD</div>
+                        <div class="testi-avatar-circle">
+                            <img src="assets/testimonials/subhajit.jpg" alt="Subhajit Dutta" class="avatar-photo">
+                        </div>
                         <div class="testi-meta">
                             <h4>Subhajit Dutta</h4>
                             <span>Founder, Apex Coaching Centre</span>
@@ -1123,7 +1241,9 @@
 
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
-                        <div class="testi-avatar-circle">DP</div>
+                        <div class="testi-avatar-circle">
+                            <img src="assets/testimonials/debasish.jpg" alt="Debasish Paul" class="avatar-photo">
+                        </div>
                         <div class="testi-meta">
                             <h4>Debasish Paul</h4>
                             <span>Founder, Candid Moments Studio</span>
