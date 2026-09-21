@@ -1,0 +1,8 @@
+# Large zip archive (already extracted into frames/video_frames_png/)
+*.zip
+Man_turning_head_frames_24fps_PNG.zip
+
+# OS artifacts
+Thumbs.db
+Desktop.ini
+.DS_Store

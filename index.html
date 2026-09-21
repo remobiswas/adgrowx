@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remo Biswas | Digital Marketer & Founder of AdGrowX</title>
+    <meta name="description" content="Remo Biswas is an expert Digital Marketer with 7+ years of experience and Founder of AdGrowX. Full-screen cinematic scroll experience across Meta Ads, Google Ads, YouTube Ads, SEO, and Growth Architecture.">
+    <meta name="keywords" content="Remo Biswas, Digital Marketer, AdGrowX, Meta Ads, Google Ads, YouTube Ads, SEO, West Bengal, Growth Marketing">
+    <meta name="author" content="Remo Biswas">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Remo Biswas | Digital Marketer & Founder of AdGrowX">
+    <meta property="og:description" content="7+ Years in Digital Marketing • Full-Screen Cinematic Story • AdGrowX">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- Fixed Glass Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#cinematic" class="brand-logo">
+                <span class="logo-name">REMO BISWAS</span>
+                <span class="logo-badge">ADGROW<span class="text-red">X</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#cinematic" class="nav-link active">EXPERIENCE</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#services" class="nav-link">SERVICES</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#testimonials" class="nav-link">TESTIMONIALS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/?text=Hi%20Remo,%20I'd%20like%20to%20grow%20my%20business%20with%20AdGrowX" target="_blank" rel="noopener" class="btn-gradient btn-capsule">LET'S TALK</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="drawer-brand">REMO BISWAS <span class="text-red">• AdGrowX</span></div>
+            <button class="drawer-close" id="drawerClose">&times;</button>
+        </div>
+        <div class="drawer-links">
+            <a href="#cinematic" class="drawer-link">01 // CINEMATIC EXPERIENCE</a>
+            <a href="#about" class="drawer-link">02 // ABOUT REMO (7+ YRS)</a>
+            <a href="#services" class="drawer-link">03 // CORE SERVICES</a>
+            <a href="#projects" class="drawer-link">04 // SELECTED PROJECTS</a>
+            <a href="#testimonials" class="drawer-link">05 // CLIENT REVIEWS</a>
+            <a href="#contact" class="drawer-link text-red">06 // GROW YOUR BUSINESS</a>
+        </div>
+        <div class="drawer-footer">
+            <p>7+ Years in Digital Marketing</p>
+            <div class="drawer-socials">
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         CINEMATIC FULL-SCREEN SCROLL EXPERIENCE (REMO AS THE STAGE)
+         ========================================================================== -->
+    <div class="cinematic-scroll-container" id="cinematic">
+        
+        <!-- STICKY FULL-SCREEN VISUAL STAGE (100vw x 100vh) -->
+        <div class="cinematic-stage" id="cinematicStage">
+            
+            <!-- LAYER 1: The 240-Frame Full-Screen Canvas of Remo Biswas (Stage) -->
+            <canvas id="animation-canvas" class="full-viewport-canvas"></canvas>
+            
+            <!-- Loading Indicator -->
+            <div class="canvas-loader" id="canvasLoader">
+                <div class="loader-spinner"></div>
+                <span class="loader-text" id="loaderStatusText">Loading 3D Visual Stage...</span>
+            </div>
+
+            <!-- LAYER 2: Cinematic Lighting, Vignettes & Depth Gradients -->
+            <div class="stage-gradient-overlay"></div>
+            <div class="stage-vignette"></div>
+
+            <!-- Ambient Subtle Glows -->
+            <div class="ambient-glow glow-top-right"></div>
+            <div class="ambient-glow glow-bottom-left"></div>
+
+            <!-- LAYER 3: 3D MARKETING ACTORS & SCROLL SCENES (Drop In From Top) -->
+            <div class="stage-actors-viewport">
+                
+                <!-- SCENE 01: MINIMAL HERO INTRO -->
+                <div class="scene-panel scene-01 active" id="scene1">
+                    <div class="scene-hud-container hud-scene-01">
+                        <div class="hero-text-box">
+                            <div class="scene-eyebrow">
+                                <span class="live-dot"></span> FOUNDER OF ADGROW<span class="text-red">X</span>
+                            </div>
+                            <h1 class="scene-title-hero">REMO BISWAS</h1>
+                            <p class="scene-subtitle-hero">
+                                Digital Marketer • Founder of AdGrowX
+                            </p>
+                            <div class="hero-cta-wrapper">
+                                <a href="#contact" class="btn-gradient btn-capsule btn-large">LET'S GROW YOUR BUSINESS</a>
+                            </div>
+                        </div>
+
+                        <div class="hero-floating-badges">
+                            <div class="hud-pill pill-left">
+                                <i class="fa-solid fa-bolt text-red"></i> 7+ Years Marketing Mastery
+                            </div>
+                            <div class="hud-pill pill-right">
+                                <i class="fa-solid fa-chart-line text-green"></i> 360° Growth Architecture
+                            </div>
+                        </div>
+
+                        <div class="scroll-prompt-pill">
+                            <i class="fa-solid fa-arrow-down"></i> SCROLL TO EXPLORE MARKETING ECOSYSTEM
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 02: 3D DIGITAL MARKETING CORE NODES -->
+                <div class="scene-panel scene-02" id="scene2">
+                    <div class="scene-hud-container hud-dual-flank">
+                        <div class="hud-card hud-left float-card">
+                            <div class="actor-badge text-red"><i class="fa-solid fa-chart-line"></i> DIGITAL STRATEGY</div>
+                            <h3>Full-Funnel Growth Engine</h3>
+                            <p>Moving cold prospects systematically into high-ticket buyers through precision market positioning and intent-driven media distribution.</p>
+                            <div class="metric-row">
+                                <div><span class="m-num">7+</span> <span class="m-lbl">Years Experience</span></div>
+                                <div><span class="m-num text-red">360°</span> <span class="m-lbl">Growth Systems</span></div>
+                            </div>
+                        </div>
+
+                        <div class="hud-card hud-right float-card-delay">
+                            <div class="actor-badge text-gold"><i class="fa-solid fa-crosshairs"></i> CORE PILLARS</div>
+                            <div class="node-chips-grid">
+                                <span class="node-chip"><i class="fa-brands fa-meta"></i> Meta Ads</span>
+                                <span class="node-chip"><i class="fa-brands fa-google"></i> Google Ads</span>
+                                <span class="node-chip"><i class="fa-brands fa-youtube"></i> YouTube Ads</span>
+                                <span class="node-chip"><i class="fa-solid fa-magnifying-glass"></i> SEO Ranking</span>
+                                <span class="node-chip"><i class="fa-solid fa-laptop-code"></i> Websites</span>
+                                <span class="node-chip"><i class="fa-solid fa-arrows-spin text-red"></i> Retargeting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 03: META ADS 3D SUITE -->
+                <div class="scene-panel scene-03" id="scene3">
+                    <div class="scene-hud-container hud-dual-flank">
+                        <div class="hud-card hud-left float-card">
+                            <div class="dash-top-bar">
+                                <span class="tag-meta"><i class="fa-brands fa-meta"></i> META ADS SUITE</span>
+                                <span class="status-live"><span class="pulse-green"></span> ACTIVE CBO</span>
+                            </div>
+                            <h3>Structured FB & IG Campaigns</h3>
+                            <p class="hud-subdesc">Lookalike modeling, dynamic creative testing, and instant WhatsApp lead gen.</p>
+                            <div class="stats-mini-grid">
+                                <div class="mini-stat">
+                                    <span class="s-label">Total Reach</span>
+                                    <strong class="s-val">128.4K</strong>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="s-label">Link CTR</span>
+                                    <strong class="s-val text-green">3.82%</strong>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="s-label">Avg. CPC</span>
+                                    <strong class="s-val">₹14.20</strong>
+                                </div>
+                                <div class="mini-stat highlight-box">
+                                    <span class="s-label">Direct Leads</span>
+                                    <strong class="s-val text-red">342 Enquiries</strong>
+                                </div>
+                            </div>
+                            <div class="targeting-pills-row">
+                                <span>Lookalike 1%</span>
+                                <span>High-Intent Shoppers</span>
+                                <span>Geo-Radius Ads</span>
+                            </div>
+                        </div>
+
+                        <div class="hud-card hud-right float-card-delay">
+                            <div class="ad-sim-header">
+                                <div class="sim-avatar">R</div>
+                                <div>
+                                    <strong>Remo Biswas • AdGrowX</strong>
+                                    <small>Sponsored • Meta Ads Specialist</small>
+                                </div>
+                            </div>
+                            <p class="sim-copy">Scale your customer acquisition with structured Meta campaigns. Direct WhatsApp booking below! 👇</p>
+                            <div class="sim-banner">
+                                <h4>Predictable Business Growth</h4>
+                                <span>Strategy • Creative • Conversions</span>
+                            </div>
+                            <div class="sim-footer">
+                                <span>adgrowx.com</span>
+                                <button class="btn-whatsapp-sim">WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 04: GOOGLE SEARCH ADS SUITE -->
+                <div class="scene-panel scene-04" id="scene4">
+                    <div class="scene-hud-container hud-dual-flank">
+                        <div class="hud-card hud-left float-card">
+                            <div class="dash-top-bar">
+                                <span class="tag-google"><i class="fa-brands fa-google"></i> GOOGLE SEARCH NETWORK</span>
+                                <span class="roas-pill">ROAS 4.8X</span>
+                            </div>
+                            <h3>High-Intent Keyword Dominance</h3>
+                            <p class="hud-subdesc">Capturing prospects actively looking to buy your products or book your services.</p>
+                            <div class="stats-mini-grid">
+                                <div class="mini-stat">
+                                    <span class="s-label">Search Clicks</span>
+                                    <strong class="s-val">3,120</strong>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="s-label">Quality Score</span>
+                                    <strong class="s-val text-green">9 / 10</strong>
+                                </div>
+                            </div>
+                            <div class="targeting-pills-row">
+                                <span>Negative Keyword Defense</span>
+                                <span>Target CPA Met</span>
+                            </div>
+                        </div>
+
+                        <div class="hud-card hud-right float-card-delay">
+                            <div class="search-input-sim">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>best digital marketing expert in kolkata</span>
+                            </div>
+                            <div class="google-serp-sim">
+                                <div class="serp-sponsor">Sponsored • adgrowx.com/remo-biswas</div>
+                                <h4>Remo Biswas | Digital Marketer & Founder of AdGrowX</h4>
+                                <p>Turn high-intent search traffic into verified customer bookings. 7+ years of search excellence.</p>
+                                <div class="serp-chips">
+                                    <span>Google Ads Setup</span>
+                                    <span>High Intent Clicks</span>
+                                    <span>ROAS Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 05: YOUTUBE VIDEO ADS SUITE -->
+                <div class="scene-panel scene-05" id="scene5">
+                    <div class="scene-hud-container hud-dual-flank">
+                        <div class="hud-card hud-left float-card">
+                            <div class="yt-screen-frame">
+                                <div class="yt-top-badge"><i class="fa-brands fa-youtube text-red"></i> In-Stream Ad • 0:15 / 1:30</div>
+                                <div class="yt-hook-box">
+                                    <h3>"How We Scaled Enquiries 3X Using Strategic Video Ads"</h3>
+                                    <p>Case study breakdown by Remo Biswas</p>
+                                    <span class="btn-capsule btn-gradient btn-sm">WATCH CASE STUDY</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hud-card hud-right float-card-delay">
+                            <div class="actor-badge text-red"><i class="fa-brands fa-youtube"></i> VIDEO ACTION METRICS</div>
+                            <h3>High-Retention Video Campaigns</h3>
+                            <p>Authoritative video hooks that conquer skepticism and convert viewers into inbound enquiries.</p>
+                            <div class="stats-mini-grid">
+                                <div class="mini-stat">
+                                    <span class="s-label">Video Views</span>
+                                    <strong class="s-val">84,200</strong>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="s-label">View Rate</span>
+                                    <strong class="s-val text-green">42.6%</strong>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="s-label">Avg. Watch</span>
+                                    <strong class="s-val">0:48</strong>
+                                </div>
+                                <div class="mini-stat highlight-box">
+                                    <span class="s-label">Conversions</span>
+                                    <strong class="s-val text-red">194 Leads</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 06: SEO & ORGANIC DOMINANCE -->
+                <div class="scene-panel scene-06" id="scene6">
+                    <div class="scene-hud-container hud-dual-flank">
+                        <div class="hud-card hud-left float-card">
+                            <div class="actor-badge text-green"><i class="fa-solid fa-magnifying-glass-chart"></i> ORGANIC AUTHORITY</div>
+                            <h3>Search Engine Dominance</h3>
+                            <div class="rank-list-sim">
+                                <div class="rank-row">
+                                    <span class="rank-badge">#1</span>
+                                    <span class="rank-kw">Digital Marketing Consultant West Bengal</span>
+                                    <span class="rank-vol">High Intent</span>
+                                </div>
+                                <div class="rank-row">
+                                    <span class="rank-badge">#1</span>
+                                    <span class="rank-kw">AdGrowX Performance Agency</span>
+                                    <span class="rank-vol">Branded</span>
+                                </div>
+                                <div class="rank-row">
+                                    <span class="rank-badge">#2</span>
+                                    <span class="rank-kw">Meta Ads Specialist Kolkata</span>
+                                    <span class="rank-vol">Lead Gen</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hud-card hud-right float-card-delay">
+                            <h4>Organic Traffic Compounding</h4>
+                            <p>Sustainable visibility that drives revenue month after month without paying for every single click.</p>
+                            <div class="seo-bars-chart">
+                                <div class="bar-col"><span style="height: 35%;"></span><small>M1</small></div>
+                                <div class="bar-col"><span style="height: 48%;"></span><small>M2</small></div>
+                                <div class="bar-col"><span style="height: 65%;"></span><small>M3</small></div>
+                                <div class="bar-col"><span style="height: 80%;"></span><small>M4</small></div>
+                                <div class="bar-col"><span style="height: 100%;" class="active-bar"></span><small>M5</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 07: SOCIAL MEDIA & CREATIVE REELS -->
+                <div class="scene-panel scene-07" id="scene7">
+                    <div class="scene-hud-container hud-dual-flank">
+                        <div class="hud-card hud-left float-card">
+                            <div class="actor-badge text-purple"><i class="fa-brands fa-instagram"></i> SOCIAL STRATEGY</div>
+                            <h3>Not Just Posting — Brand Authority</h3>
+                            <p>Strategic content calendars, viral hook formulas, and aesthetic reels engineered to convert casual followers into loyal brand advocates.</p>
+                            <div class="social-metrics-row">
+                                <div><span class="s-bold text-red">+140%</span> <small>Engagement</small></div>
+                                <div><span class="s-bold text-gold">4.2x</span> <small>DM Inquiries</small></div>
+                            </div>
+                        </div>
+
+                        <div class="hud-card hud-right float-card-delay">
+                            <div class="reel-mockup">
+                                <div class="reel-overlay">
+                                    <span class="reel-tag"><i class="fa-solid fa-play"></i> REEL // MOTION</span>
+                                    <h4>Viral Ad Creatives That Convert</h4>
+                                    <div class="reel-eng-bar">
+                                        <span><i class="fa-solid fa-heart text-red"></i> 24.8K</span>
+                                        <span><i class="fa-solid fa-comment"></i> 1.4K</span>
+                                        <span><i class="fa-solid fa-share"></i> 3.2K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 08: CONVERSION WEBSITES & LANDING PAGES -->
+                <div class="scene-panel scene-08" id="scene8">
+                    <div class="scene-hud-container hud-dual-flank">
+                        <div class="hud-card hud-left float-card">
+                            <div class="actor-badge text-red"><i class="fa-solid fa-laptop-code"></i> CONVERSION WEB</div>
+                            <h3>Landing Pages That Convert</h3>
+                            <p>Engineered for lightning-fast mobile performance, frictionless booking forms, and high user retention.</p>
+                            <div class="targeting-pills-row mt-2">
+                                <span>Mobile-First Speed</span>
+                                <span>WhatsApp Integration</span>
+                                <span>Frictionless Forms</span>
+                            </div>
+                        </div>
+
+                        <div class="hud-card hud-right browser-device-suite float-card-delay">
+                            <div class="browser-top-bar">
+                                <div class="window-buttons">
+                                    <span class="btn-dot r"></span>
+                                    <span class="btn-dot y"></span>
+                                    <span class="btn-dot g"></span>
+                                </div>
+                                <div class="window-url">adgrowx.com/client-funnel</div>
+                            </div>
+                            <div class="browser-inner-mock">
+                                <h4>High-Converting Funnels</h4>
+                                <p>Turn cold clicks into warm WhatsApp conversations.</p>
+                                <span class="mock-cta">Direct Enquiry Action</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 09: GRAPHIC DESIGN & VIDEO EDITING SUITE -->
+                <div class="scene-panel scene-09" id="scene9">
+                    <div class="scene-hud-container hud-dual-flank">
+                        <!-- Left: Graphic Design Canvas -->
+                        <div class="hud-card hud-left float-card">
+                            <div class="actor-badge text-gold"><i class="fa-solid fa-palette"></i> GRAPHIC DESIGN SUITE</div>
+                            <h3>High-CTR Marketing Assets</h3>
+                            <p>Custom-crafted social banners, carousel ads, and brand identity systems that capture attention in fast-scrolling feeds.</p>
+                            <div class="targeting-pills-row">
+                                <span>Ad Banners</span>
+                                <span>Carousel Design</span>
+                                <span>Typography Angles</span>
+                            </div>
+                        </div>
+
+                        <!-- Right: Video Editing Timeline -->
+                        <div class="hud-card hud-right float-card-delay">
+                            <div class="actor-badge text-red"><i class="fa-solid fa-film"></i> VIDEO EDITING SUITE</div>
+                            <h3>Short-Form Viral Reels & Ads</h3>
+                            <div class="video-timeline-sim">
+                                <div class="timeline-track track-video">
+                                    <span class="clip c1">HOOK 0-3s</span>
+                                    <span class="clip c2">STORY 3-12s</span>
+                                    <span class="clip c3">CTA 12-15s</span>
+                                </div>
+                                <div class="timeline-track track-audio">
+                                    <div class="audio-wave">|||||||||||||||||||||||||||||||||||||||||||||</div>
+                                </div>
+                            </div>
+                            <small class="text-muted">Pacing, Sound Design, Motion Graphics & Captions</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 10: CUSTOMER JOURNEY & CONNECTED FLYWHEEL -->
+                <div class="scene-panel scene-10" id="scene10">
+                    <div class="scene-hud-container hud-scene-10">
+                        <div class="scene-eyebrow text-red">THE COMPLETE ENGINE</div>
+                        <h2 class="scene-title-flywheel">From First Click to Customer</h2>
+                        
+                        <div class="flywheel-flow-row">
+                            <div class="fw-node"><i class="fa-solid fa-chess"></i><span>STRATEGY</span></div>
+                            <div class="fw-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="fw-node"><i class="fa-solid fa-pen-nib"></i><span>CONTENT</span></div>
+                            <div class="fw-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="fw-node active"><i class="fa-brands fa-meta"></i><span>PAID ADS</span></div>
+                            <div class="fw-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="fw-node"><i class="fa-solid fa-laptop"></i><span>LANDING PAGE</span></div>
+                            <div class="fw-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="fw-node"><i class="fa-brands fa-whatsapp text-green"></i><span>WHATSAPP</span></div>
+                            <div class="fw-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="fw-node result-node"><i class="fa-solid fa-trophy text-red"></i><span>GROWTH</span></div>
+                        </div>
+
+                        <div class="scene-cta-wrap mt-3">
+                            <a href="#about" class="btn-outline btn-capsule">CONTINUE TO SERVICES & PROJECTS <i class="fa-solid fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scene Indicator Dots & Label HUD -->
+            <div class="scene-hud-indicator">
+                <div class="scene-counter-pill" id="sceneCounterPill">
+                    <span id="currentSceneIndex">01</span> / 10 • <span id="currentSceneLabel">Hero Intro</span>
+                </div>
+                <div class="scene-nav-dots" id="sceneNavDots">
+                    <span class="dot active" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                    <span class="dot" data-index="6"></span>
+                    <span class="dot" data-index="7"></span>
+                    <span class="dot" data-index="8"></span>
+                    <span class="dot" data-index="9"></span>
+                    <span class="dot" data-index="10"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================================================
+         BRAND & CREATIVE SHOWCASE MARQUEE (Screenshots 2 & 3 Inspiration)
+         ========================================================================== -->
+    <section class="marquee-section">
+        <div class="brand-strip-container">
+            <div class="brand-strip-track">
+                <div class="brand-item"><i class="fa-brands fa-meta"></i> META ADS</div>
+                <div class="brand-item"><i class="fa-brands fa-google"></i> GOOGLE ADS</div>
+                <div class="brand-item"><i class="fa-brands fa-youtube"></i> YOUTUBE ADS</div>
+                <div class="brand-item"><i class="fa-solid fa-chart-line"></i> ADGROWX PERFORMANCE</div>
+                <div class="brand-item"><i class="fa-brands fa-instagram"></i> INSTAGRAM GROWTH</div>
+                <div class="brand-item"><i class="fa-solid fa-magnifying-glass"></i> SEO DOMINANCE</div>
+                <div class="brand-item"><i class="fa-solid fa-laptop-code"></i> CONVERSION WEBSITES</div>
+                <!-- Duplicate for infinite marquee -->
+                <div class="brand-item"><i class="fa-brands fa-meta"></i> META ADS</div>
+                <div class="brand-item"><i class="fa-brands fa-google"></i> GOOGLE ADS</div>
+                <div class="brand-item"><i class="fa-brands fa-youtube"></i> YOUTUBE ADS</div>
+                <div class="brand-item"><i class="fa-solid fa-chart-line"></i> ADGROWX PERFORMANCE</div>
+                <div class="brand-item"><i class="fa-brands fa-instagram"></i> INSTAGRAM GROWTH</div>
+                <div class="brand-item"><i class="fa-solid fa-magnifying-glass"></i> SEO DOMINANCE</div>
+                <div class="brand-item"><i class="fa-solid fa-laptop-code"></i> CONVERSION WEBSITES</div>
+            </div>
+        </div>
+
+        <!-- Dual-Row Vibrant Creative Grid Marquee (Screenshot 2 & 3 Style) -->
+        <div class="creative-marquee-wrapper">
+            <div class="creative-marquee-track track-left">
+                <div class="creative-card card-art-1">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">CREATIVE DIRECTION</span>
+                        <h4>Vibrant Social Reel Ads</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-2">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">META ADS</span>
+                        <h4>High CTR Visual Creatives</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-3">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">BRAND IDENTITY</span>
+                        <h4>AdGrowX Growth Assets</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-4">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">CONVERSION UI</span>
+                        <h4>E-Commerce Scale Designs</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-5">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">VIDEO EDITING</span>
+                        <h4>Viral Hook Motion Graphics</h4>
+                    </div>
+                </div>
+                <!-- Loop duplicates -->
+                <div class="creative-card card-art-1">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">CREATIVE DIRECTION</span>
+                        <h4>Vibrant Social Reel Ads</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-2">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">META ADS</span>
+                        <h4>High CTR Visual Creatives</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="creative-marquee-track track-right">
+                <div class="creative-card card-art-6">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">PERFORMANCE</span>
+                        <h4>Interactive Ad Mockups</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-7">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">LANDING PAGES</span>
+                        <h4>High Conversion Layouts</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-8">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">GOOGLE SEARCH</span>
+                        <h4>Intent-Driven Campaign UI</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-9">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">YOUTUBE ADS</span>
+                        <h4>In-Stream Video Storytelling</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-10">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">SEO DOMINANCE</span>
+                        <h4>Organic Search Authority</h4>
+                    </div>
+                </div>
+                <!-- Loop duplicates -->
+                <div class="creative-card card-art-6">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">PERFORMANCE</span>
+                        <h4>Interactive Ad Mockups</h4>
+                    </div>
+                </div>
+                <div class="creative-card card-art-7">
+                    <div class="card-inner-overlay">
+                        <span class="card-tag">LANDING PAGES</span>
+                        <h4>High Conversion Layouts</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT REMO BISWAS (Screenshot 4 Inspiration)
+         ========================================================================== -->
+    <section class="about-section" id="about">
+        <!-- Floating Playful 3D Badges (Flower & Heart from Screenshot 4) -->
+        <div class="floating-shape shape-flower-purple" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="svg-flower">
+                <circle cx="50" cy="50" r="16" fill="#facc15"/>
+                <circle cx="50" cy="20" r="16" fill="#a855f7"/>
+                <circle cx="80" cy="50" r="16" fill="#a855f7"/>
+                <circle cx="50" cy="80" r="16" fill="#a855f7"/>
+                <circle cx="20" cy="50" r="16" fill="#a855f7"/>
+                <circle cx="28" cy="28" r="14" fill="#9333ea"/>
+                <circle cx="72" cy="28" r="14" fill="#9333ea"/>
+                <circle cx="72" cy="72" r="14" fill="#9333ea"/>
+                <circle cx="28" cy="72" r="14" fill="#9333ea"/>
+            </svg>
+        </div>
+        <div class="floating-shape shape-heart-red" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="svg-heart">
+                <path d="M50 85 L15 50 C5 35 15 15 35 15 C44 15 48 20 50 25 C52 20 56 15 65 15 C85 15 95 35 85 50 Z" fill="#ef4444"/>
+            </svg>
+        </div>
+
+        <div class="section-container about-content">
+            <div class="about-hero-title">
+                <h2>ABOUT ME</h2>
+            </div>
+
+            <div class="about-narrative-box reveal-fade">
+                <p class="about-lead">
+                    With over <span class="highlight-text">7+ years of digital marketing experience</span>, I specialize in Meta Ads, Google Ads, SEO, and conversion-focused web architecture.
+                </p>
+                <p class="about-sub">
+                    I help businesses understand their target audience, run high-converting ad campaigns, build landing pages that actually sell, and scale their customer pipeline. As the founder of <strong class="text-white">AdGrowX</strong>, I focus on practical, data-backed digital marketing that moves businesses forward.
+                </p>
+                
+                <div class="about-cta-wrap">
+                    <a href="https://wa.me/?text=Hi%20Remo,%20I%20want%20to%20collaborate%20with%20AdGrowX" target="_blank" rel="noopener" class="btn-gradient btn-capsule btn-large">CONTACT ME</a>
+                </div>
+            </div>
+
+            <!-- 7+ Years Experience Counter Component -->
+            <div class="experience-counter-grid reveal-scale">
+                <div class="exp-counter-card card-primary">
+                    <div class="exp-number-wrap">
+                        <span class="exp-number" data-target="7">7</span><span class="exp-plus">+</span>
+                    </div>
+                    <div class="exp-label">Years in Digital Marketing</div>
+                    <div class="exp-desc">Proven strategies, countless campaigns, and deep performance marketing expertise.</div>
+                </div>
+
+                <div class="exp-counter-card">
+                    <div class="exp-stat-row">
+                        <div class="stat-icon"><i class="fa-brands fa-meta"></i></div>
+                        <div>
+                            <div class="stat-title">Paid Media Specialization</div>
+                            <div class="stat-val">Meta • Google • YouTube Ads</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-counter-card">
+                    <div class="exp-stat-row">
+                        <div class="stat-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                        <div>
+                            <div class="stat-title">Conversion Architecture</div>
+                            <div class="stat-val">Funnels • WhatsApp • Landing Pages</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-counter-card">
+                    <div class="exp-stat-row">
+                        <div class="stat-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <div>
+                            <div class="stat-title">AdGrowX Agency</div>
+                            <div class="stat-val">End-to-End Growth Scaling</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES ECOSYSTEM (Screenshots 5 & 6 Inspiration)
+         ========================================================================== -->
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="services-header-box">
+                <div class="section-subtitle">SERVICES</div>
+                <h2 class="services-huge-title">SERVICES</h2>
+                <p class="services-subtitle-desc">
+                    Comprehensive digital growth solutions engineered for high intent, qualified leads, and measurable business expansion.
+                </p>
+            </div>
+
+            <!-- Numbered Services List -->
+            <div class="services-numbered-list">
+                
+                <div class="service-item reveal-slide active">
+                    <div class="service-row-main">
+                        <div class="service-num">01</div>
+                        <div class="service-details">
+                            <h3 class="service-name">DIGITAL MARKETING STRATEGY</h3>
+                            <p class="service-desc">
+                                End-to-end full-funnel digital marketing framework. Audience research, market positioning, multichannel distribution, and data-backed performance tracking designed to consistently generate leads and enquiries.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">CORE ENGINE</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Audience Research</span>
+                        <span>Multi-Channel Strategy</span>
+                        <span>Conversion Tracking</span>
+                        <span>Performance Scaling</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">02</div>
+                        <div class="service-details">
+                            <h3 class="service-name">META & INSTAGRAM ADS</h3>
+                            <p class="service-desc">
+                                Laser-focused Facebook & Instagram advertising. Structured campaign architectures, creative testing methodologies, lookalike audience modeling, and instant WhatsApp lead forms.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">PAID MEDIA</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Custom Audiences</span>
+                        <span>Dynamic Creative Testing</span>
+                        <span>WhatsApp Lead Gen</span>
+                        <span>Retargeting Funnels</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">03</div>
+                        <div class="service-details">
+                            <h3 class="service-name">GOOGLE SEARCH & PERFORMANCE MAX</h3>
+                            <p class="service-desc">
+                                Capturing high-intent prospects precisely when they search for your services. Rigorous negative keyword curation, ad copy optimization, Quality Score enhancement, and conversion tracking.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">SEARCH INTENT</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Search Campaigns</span>
+                        <span>Performance Max</span>
+                        <span>Keyword Intent</span>
+                        <span>ROAS Optimization</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">04</div>
+                        <div class="service-details">
+                            <h3 class="service-name">YOUTUBE VIDEO ADVERTISING</h3>
+                            <p class="service-desc">
+                                High-impact skippable and in-feed video ads on YouTube that build brand authority and trigger direct viewer actions through captivating hooks and direct conversion calls.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">VIDEO ADS</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>In-Stream Ads</span>
+                        <span>Audience Placement</span>
+                        <span>Watch-Time Retention</span>
+                        <span>Action Campaigns</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">05</div>
+                        <div class="service-details">
+                            <h3 class="service-name">SOCIAL MEDIA MARKETING</h3>
+                            <p class="service-desc">
+                                Profile optimization, engagement funnels, and organic brand positioning across Facebook, Instagram, and LinkedIn to turn casual followers into brand advocates.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">ORGANIC & SOCIAL</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Content Strategy</span>
+                        <span>Viral Hook Formulas</span>
+                        <span>Reels & Stories</span>
+                        <span>Brand Authority</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">06</div>
+                        <div class="service-details">
+                            <h3 class="service-name">SOCIAL MEDIA MANAGEMENT</h3>
+                            <p class="service-desc">
+                                Structured publishing calendars, community engagement, review management, and continuous profile health audits.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">MANAGEMENT</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Content Calendars</span>
+                        <span>Scheduled Distribution</span>
+                        <span>Community Care</span>
+                        <span>Platform Growth</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">07</div>
+                        <div class="service-details">
+                            <h3 class="service-name">SEARCH ENGINE OPTIMIZATION (SEO)</h3>
+                            <p class="service-desc">
+                                Data-driven search ranking optimization. Technical SEO audits, local Google Business optimization, high-volume keyword targeting, and authoritative on-page content structures.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">ORGANIC SEARCH</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Technical Audits</span>
+                        <span>Local SEO & Maps</span>
+                        <span>On-Page Architecture</span>
+                        <span>Search Authority</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">08</div>
+                        <div class="service-details">
+                            <h3 class="service-name">WEBSITE DESIGN & DEVELOPMENT</h3>
+                            <p class="service-desc">
+                                Clean, ultra-fast, responsive web interfaces and high-converting landing pages built with clear visual hierarchy, frictionless lead submission forms, and mobile-first speed.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">WEB & CONVERSION</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Landing Pages</span>
+                        <span>Responsive UI</span>
+                        <span>Speed Optimization</span>
+                        <span>Frictionless Forms</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">09</div>
+                        <div class="service-details">
+                            <h3 class="service-name">GRAPHIC DESIGN</h3>
+                            <p class="service-desc">
+                                Creative marketing assets engineered specifically for ad performance. Thumb-stopping ad banners, carousels, promotional creatives, and conversion-focused typography.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">CREATIVE ASSETS</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Ad Creatives</span>
+                        <span>Social Banners</span>
+                        <span>Visual Identity</span>
+                        <span>Marketing Collateral</span>
+                    </div>
+                </div>
+
+                <div class="service-item reveal-slide">
+                    <div class="service-row-main">
+                        <div class="service-num">10</div>
+                        <div class="service-details">
+                            <h3 class="service-name">VIDEO EDITING</h3>
+                            <p class="service-desc">
+                                Short-form video reels, promotional video ads, and engaging narrative cuts tailored for Instagram Reels, YouTube Shorts, and paid video funnels.
+                            </p>
+                        </div>
+                        <div class="service-badge-cat">VIDEO MOTION</div>
+                    </div>
+                    <div class="service-subtags">
+                        <span>Reels & Shorts</span>
+                        <span>Video Ad Cuts</span>
+                        <span>Motion Graphics</span>
+                        <span>Hook Pacing</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         SELECTED PROJECTS (Screenshots 7 & 8 Stacking Cards)
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+        <div class="section-container">
+            <div class="projects-header-box reveal-fade">
+                <div class="section-subtitle">SELECTED WORK</div>
+                <h2 class="projects-huge-title">PROJECTS</h2>
+                <p class="projects-subtitle-desc">
+                    Hand-crafted growth campaigns and digital assets designed for measurable performance.
+                </p>
+            </div>
+
+            <!-- Stacking Cards Container (Screenshot 7 & 8 Style) -->
+            <div class="stacking-cards-container">
+                
+                <div class="stack-card card-01" id="projectCard1">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">01</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">CLIENT</span>
+                                <strong class="client-name">Kolkata Gourmet Bistro & Lounge</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-preview-img img-p1"><div class="img-badge">Meta Ads + Reel Strategy</div></div>
+                            <div class="stack-preview-img img-p2"><div class="img-badge">WhatsApp Bookings Funnel</div></div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Weekend Dining Bookings</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Hyper-local Geo Ads + WhatsApp</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">340+ Table Inquiries / Mo (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-card card-02" id="projectCard2">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">02</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">CLIENT</span>
+                                <strong class="client-name">Aura Skin & Dental Aesthetics</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-preview-img img-p3"><div class="img-badge">Google Search Ads</div></div>
+                            <div class="stack-preview-img img-p4"><div class="img-badge">High Conversion Landing Page</div></div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">High-Ticket Appointments</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Search Intent + Quality Score 9/10</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">4.6x Consultation Pipeline (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-card card-03" id="projectCard3">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">03</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">CLIENT</span>
+                                <strong class="client-name">Sutradhar D2C Handloom Boutique</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-preview-img img-p5"><div class="img-badge">Catalog Dynamic Ads</div></div>
+                            <div class="stack-preview-img img-p6"><div class="img-badge">Instagram Shopping Strategy</div></div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Pan-India E-Commerce Scale</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Advantage+ Creative Suite & Retargeting</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">+180% Purchase Velocity (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-card card-04" id="projectCard4">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">04</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">CLIENT</span>
+                                <strong class="client-name">Apex Civil & Architectural Academy</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-preview-img img-p7"><div class="img-badge">Webinar & Course Funnel</div></div>
+                            <div class="stack-preview-img img-p8"><div class="img-badge">YouTube Ads Distribution</div></div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Student Admissions & Enrollments</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">In-Stream Video Ads + Automated CRM</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">520+ Qualified Enquiries (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         TESTIMONIALS (Screenshot 9 Inspiration)
+         ========================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-container">
+            <div class="testi-header-center reveal-fade">
+                <h2 class="testi-title">
+                    What Clients Are Saying
+                    <span class="emoji-heart-eyes">😍</span>
+                </h2>
+                <p class="testi-sub">
+                    Perspectives from business owners scaling with Remo Biswas & AdGrowX.
+                </p>
+                <div class="demo-tag-center">Sample / Illustrative Client Reviews</div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal-slide">
+                    <div class="testi-top">
+                        <div class="testi-avatar-circle">AS</div>
+                        <div class="testi-meta">
+                            <h4>Arijit Sen</h4>
+                            <span>Owner, Kolkata Cafe & Restaurant</span>
+                        </div>
+                    </div>
+                    <p class="testi-text">
+                        "Remo's Meta Ads strategy completely changed our weekday footfall. His targeting was pinpoint accurate and our WhatsApp reservations doubled within weeks. Highly recommended!"
+                    </p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-slide">
+                    <div class="testi-top">
+                        <div class="testi-avatar-circle">MR</div>
+                        <div class="testi-meta">
+                            <h4>Moumita Roy</h4>
+                            <span>Founder, Silk Route Fashion Boutique</span>
+                        </div>
+                    </div>
+                    <p class="testi-text">
+                        "As a boutique fashion founder, finding an ads specialist who understands both creative aesthetics and return on ad spend was rare. Remo and AdGrowX delivered fantastic results."
+                    </p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-slide">
+                    <div class="testi-top">
+                        <div class="testi-avatar-circle">SG</div>
+                        <div class="testi-meta">
+                            <h4>Sourav Ghosh</h4>
+                            <span>Real Estate Consultant</span>
+                        </div>
+                    </div>
+                    <p class="testi-text">
+                        "In luxury real estate, generic leads are a waste of time. Remo built a high-intent Google Search funnel that brought genuine, high-budget property buyers straight to our team."
+                    </p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-slide">
+                    <div class="testi-top">
+                        <div class="testi-avatar-circle">AD</div>
+                        <div class="testi-meta">
+                            <h4>Ananya Das</h4>
+                            <span>Director, Derma Glow Aesthetic Clinic</span>
+                        </div>
+                    </div>
+                    <p class="testi-text">
+                        "The landing page Remo created for our clinic converted at an unbelievable rate. His combination of clean design and persuasive Meta ad angles was exactly what we needed."
+                    </p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-slide">
+                    <div class="testi-top">
+                        <div class="testi-avatar-circle">SD</div>
+                        <div class="testi-meta">
+                            <h4>Subhajit Dutta</h4>
+                            <span>Founder, Apex Coaching Centre</span>
+                        </div>
+                    </div>
+                    <p class="testi-text">
+                        "7+ years of experience really shows in how Remo thinks. No fluff, no false promises—just clear strategy, daily tracking, and a steady stream of verified student enquiries."
+                    </p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-slide">
+                    <div class="testi-top">
+                        <div class="testi-avatar-circle">DP</div>
+                        <div class="testi-meta">
+                            <h4>Debasish Paul</h4>
+                            <span>Founder, Candid Moments Studio</span>
+                        </div>
+                    </div>
+                    <p class="testi-text">
+                        "Remo's creative reel distribution gave my wedding photography studio unmatched local visibility. Inquiries surged right at the start of wedding season."
+                    </p>
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         FINAL HIGH-IMPACT CONVERSION CTA
+         ========================================================================== -->
+    <section class="cta-section" id="contact">
+        <div class="section-container">
+            <div class="cta-card-box reveal-scale">
+                <div class="cta-glow-bg"></div>
+                <div class="cta-inner-content">
+                    <div class="cta-tag">READY TO SCALE?</div>
+                    <h2 class="cta-title">Ready to Grow Your Business Online?</h2>
+                    <p class="cta-desc">
+                        Let's build the right digital strategy for your business—from visibility and traffic to predictable enquiries, leads, and customer conversions.
+                    </p>
+
+                    <div class="cta-btn-row">
+                        <a href="https://wa.me/?text=Hi%20Remo,%20I'd%20like%20to%20grow%20my%20business%20with%20AdGrowX" target="_blank" rel="noopener" class="btn-gradient btn-large btn-capsule">
+                            <i class="fa-brands fa-whatsapp"></i> START A CONVERSATION
+                        </a>
+                        <a href="#services" class="btn-outline btn-large btn-capsule">
+                            EXPLORE SERVICES
+                        </a>
+                    </div>
+
+                    <div class="cta-direct-links">
+                        <div class="direct-item">
+                            <i class="fa-solid fa-user-tie text-red"></i>
+                            <span>Remo Biswas • Founder, AdGrowX</span>
+                        </div>
+                        <div class="direct-item">
+                            <i class="fa-solid fa-clock text-gold"></i>
+                            <span>7+ Years Digital Marketing Experience</span>
+                        </div>
+                        <div class="direct-item">
+                            <i class="fa-solid fa-bolt text-red"></i>
+                            <span>Meta Ads • Google Ads • Funnels • SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         MEGA FOOTER (Screenshot 10 Inspiration)
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="section-container">
+            <!-- Huge Outlined Typographic Name (Screenshot 10 Style) -->
+            <div class="footer-huge-outline-branding">
+                <span class="outline-row">REMO BISWAS</span>
+                <span class="solid-row">ADGROW<span class="text-red">X</span></span>
+            </div>
+
+            <!-- Footer Decorative Playful Shapes (Screenshot 10 Style) -->
+            <div class="footer-shapes-row" aria-hidden="true">
+                <div class="f-shape shape-pill-purple"></div>
+                <div class="f-shape shape-circle-green"></div>
+                <div class="f-shape shape-circle-yellow"></div>
+                <div class="f-shape shape-arc-cyan"></div>
+                <div class="f-shape shape-circle-purple"></div>
+                <div class="f-shape shape-pill-red"></div>
+            </div>
+
+            <div class="footer-content-grid">
+                <div class="footer-col-brand">
+                    <h3 class="footer-brand-title">REMO BISWAS</h3>
+                    <p class="footer-role">Digital Marketer • Founder of AdGrowX</p>
+                    <p class="footer-bio">
+                        Helping businesses build a stronger digital presence and generate meaningful outcomes through paid advertising, organic authority, and conversion architecture.
+                    </p>
+                </div>
+
+                <div class="footer-col-links">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="#services">Digital Marketing Strategy</a></li>
+                        <li><a href="#services">Meta / Facebook Ads</a></li>
+                        <li><a href="#services">Google Ads & Search</a></li>
+                        <li><a href="#services">YouTube Video Ads</a></li>
+                        <li><a href="#services">Social Media Management</a></li>
+                        <li><a href="#services">SEO Optimization</a></li>
+                        <li><a href="#services">Website Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-links">
+                    <h4>NAVIGATION</h4>
+                    <ul>
+                        <li><a href="#cinematic">Cinematic Experience</a></li>
+                        <li><a href="#about">About Remo</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Selected Projects</a></li>
+                        <li><a href="#testimonials">Client Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-social">
+                    <h4>CONNECT</h4>
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <div class="footer-agency-badge">
+                        <span>POWERED BY</span>
+                        <strong>AdGrowX Growth Agency</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div class="copyright-text">
+                    &copy; 2026 Remo Biswas. All rights reserved. Founder of AdGrowX.
+                </div>
+                <div class="footer-tagline-end">
+                    Digital Marketing • Ads • Growth
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
