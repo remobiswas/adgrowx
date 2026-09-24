@@ -1844,9 +1844,6 @@ button {
   height: 100%;
   filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.7));
 }
-  height: 100%;
-  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.6));
-}
 
 .about-content {
   position: relative;
@@ -2176,6 +2173,598 @@ button {
 
 .service-card-btn:active {
   transform: translateX(-50%) scale(0.96);
+}
+
+/* --------------------------------------------------------------------------
+   11b. 300+ BRANDS TRUST US & PLATFORMS SHOWCASE (Inspiration from References)
+   -------------------------------------------------------------------------- */
+.brands-section {
+  position: relative;
+  z-index: 20;
+  background: var(--bg-pure);
+  padding: 7.5rem 0 6rem;
+  border-top: 1px solid var(--border-light);
+  overflow: hidden;
+}
+
+.brands-ambient-glow {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 500px;
+  background: radial-gradient(ellipse, rgba(255, 42, 58, 0.08) 0%, rgba(255, 42, 58, 0.02) 45%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.brands-header-box {
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.brands-huge-title {
+  font-family: var(--font-hero);
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin-bottom: 1.25rem;
+  color: #ffffff;
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, #ffffff 10%, #ff4f62 60%, #ff2a3a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brands-subtitle-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 680px;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.brand-wall-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(255, 42, 58, 0.08);
+  border: 1px solid rgba(255, 42, 58, 0.28);
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.pulse-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-red);
+  box-shadow: 0 0 10px var(--accent-red);
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 14px var(--accent-red); }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+/* Telemetry Grid (Pan-India scale) */
+.brands-telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.telemetry-card {
+  background: linear-gradient(180deg, rgba(20, 23, 34, 0.82) 0%, rgba(13, 15, 23, 0.92) 100%);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 1.5rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.telemetry-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 42, 58, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 42, 58, 0.12);
+}
+
+.telemetry-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 42, 58, 0.1);
+  border: 1px solid rgba(255, 42, 58, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--accent-red);
+  flex-shrink: 0;
+}
+
+.telemetry-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.telemetry-number {
+  font-family: var(--font-hero);
+  font-size: 1.9rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.telemetry-label {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 0.2rem;
+}
+
+/* Strategic Partnerships Box */
+.strategic-partnerships-box {
+  background: linear-gradient(180deg, rgba(18, 20, 30, 0.75) 0%, rgba(10, 12, 18, 0.85) 100%);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-light);
+  border-radius: 22px;
+  padding: 2.75rem 2.5rem;
+  margin-bottom: 4.5rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+.strategic-partnerships-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  border-radius: 22px 22px 0 0;
+}
+
+.partnerships-header {
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
+.partnerships-header .sub-tag {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent-red);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.partnerships-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.partnerships-header p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.partner-card {
+  position: relative;
+  background: rgba(12, 14, 21, 0.85);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 1.75rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.35s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 42, 58, 0.45);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 0 28px rgba(255, 42, 58, 0.15);
+}
+
+.partner-badge-top {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-bottom: 1.15rem;
+}
+
+.partner-badge-top span {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.partner-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.65rem;
+  line-height: 1.3;
+}
+
+.partner-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.partner-verified {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  letter-spacing: 0.03em;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Continuous Infinite Marquee Wall */
+.brands-marquee-wall {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  padding: 2.5rem 0;
+  background: rgba(8, 9, 14, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+
+.marquee-sub-label {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+}
+
+.brands-marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  margin-bottom: 1.25rem;
+  will-change: transform;
+}
+
+.brands-marquee-track:last-child {
+  margin-bottom: 0;
+}
+
+.track-flow-left {
+  animation: flowLeft 42s linear infinite;
+}
+
+.track-flow-right {
+  animation: flowRight 46s linear infinite;
+}
+
+.brands-marquee-wall:hover .brands-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes flowLeft {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes flowRight {
+  0% { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+/* Brand Wall Tile */
+.brand-wall-tile {
+  background: linear-gradient(135deg, rgba(20, 23, 34, 0.75) 0%, rgba(12, 14, 22, 0.85) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+  padding: 0.85rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  white-space: nowrap;
+  cursor: default;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
+  user-select: none;
+}
+
+.brand-wall-tile:hover {
+  transform: translateY(-4px) scale(1.04);
+  border-color: rgba(255, 42, 58, 0.55);
+  background: linear-gradient(135deg, rgba(26, 30, 44, 0.95) 0%, rgba(18, 20, 30, 0.98) 100%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 42, 58, 0.16);
+}
+
+.brand-tile-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  color: #ffffff;
+  flex-shrink: 0;
+  transition: color 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+}
+
+.brand-wall-tile:hover .brand-tile-icon {
+  background: rgba(255, 42, 58, 0.15);
+  border-color: rgba(255, 42, 58, 0.4);
+  color: var(--accent-red);
+}
+
+.brand-monogram {
+  font-family: var(--font-hero);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.brand-tile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-tile-name {
+  font-family: var(--font-heading);
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.brand-tile-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Pan-India Strip */
+.pan-india-strip {
+  background: linear-gradient(180deg, rgba(16, 18, 26, 0.7) 0%, rgba(10, 11, 17, 0.8) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 1.5rem 1.85rem;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  position: relative;
+  z-index: 2;
+}
+
+.india-flag-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+}
+
+.cities-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.city-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all 0.25s ease;
+}
+
+.city-pill:hover {
+  background: rgba(255, 42, 58, 0.1);
+  border-color: rgba(255, 42, 58, 0.35);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.city-pill.highlight {
+  background: rgba(255, 42, 58, 0.14);
+  border-color: rgba(255, 42, 58, 0.4);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Growth Process Box */
+.growth-process-box {
+  background: linear-gradient(180deg, rgba(18, 20, 30, 0.75) 0%, rgba(10, 12, 18, 0.85) 100%);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-light);
+  border-radius: 22px;
+  padding: 2.75rem 2.5rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+.process-header {
+  margin-bottom: 2.25rem;
+  max-width: 650px;
+}
+
+.process-header .sub-tag {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent-red);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.process-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.process-header p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.process-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+.process-stage-card {
+  background: rgba(12, 14, 21, 0.75);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 1.6rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-stage-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 42, 58, 0.45);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 42, 58, 0.15);
+}
+
+.stage-num {
+  font-family: var(--font-hero);
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--accent-red);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.85rem;
+}
+
+.stage-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.process-stage-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.process-stage-card p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Responsive Media Queries for Brands Section */
+@media (max-width: 1024px) {
+  .brands-telemetry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-stages-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-telemetry-grid {
+    grid-template-columns: 1fr;
+  }
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-stages-grid {
+    grid-template-columns: 1fr;
+  }
+  .strategic-partnerships-box,
+  .growth-process-box {
+    padding: 2rem 1.4rem;
+  }
+  .pan-india-strip {
+    padding: 1.25rem 1.2rem;
+  }
 }
 
 /* --------------------------------------------------------------------------
