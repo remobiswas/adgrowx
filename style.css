@@ -3438,17 +3438,29 @@ button {
   border-radius: 10px;
 }
 
-.footer-agency-badge span {
+.footer-agency-badge > span,
+.footer-agency-badge .badge-label {
   display: block;
   font-size: 0.65rem;
   color: var(--text-muted);
   font-weight: 700;
   letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
 }
 
 .footer-agency-badge strong {
-  font-size: 0.88rem;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
   color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.footer-agency-badge strong .text-red {
+  display: inline;
+  color: var(--accent-red) !important;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .footer-bottom-bar {
