@@ -18,8 +18,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CDN & Font Preconnects -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Preload First Canvas Frame for Instant Visual Render -->
+    <link rel="preload" href="frames/video_frames_webp/frame_0001.webp?v=1" as="image" type="image/webp">
+
+    <!-- FontAwesome Icons (Non-blocking with fallback) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -204,7 +211,7 @@
 
                         <div class="hud-card hud-right float-card-delay">
                             <div class="ad-sim-header">
-                                <div class="sim-avatar"><img src="assets/testimonials/arijit.jpg" alt="Remo Biswas" class="sim-avatar-img"></div>
+                                <div class="sim-avatar"><img src="assets/testimonials/arijit.jpg" alt="Remo Biswas" class="sim-avatar-img" width="512" height="512" loading="lazy" decoding="async"></div>
                                 <div>
                                     <strong>Remo Biswas • Adgrow<span class="text-red">X</span></strong>
                                     <small>Sponsored • Meta Ads Specialist</small>
@@ -212,7 +219,7 @@
                             </div>
                             <p class="sim-copy">Scale your customer acquisition with structured Meta campaigns. Direct WhatsApp booking below! 👇</p>
                             <div class="sim-banner">
-                                <img src="assets/hud/meta_ad.jpg" alt="Meta Ad Creative" class="sim-banner-img">
+                                <img src="assets/hud/meta_ad.jpg" alt="Meta Ad Creative" class="sim-banner-img" width="600" height="350" decoding="async">
                                 <div class="sim-banner-content">
                                     <span class="ad-pill-tag"><i class="fa-solid fa-arrow-trend-up"></i> 4.6X ROAS</span>
                                     <h4>Predictable Business Growth</h4>
@@ -277,7 +284,7 @@
                     <div class="scene-hud-container hud-dual-flank">
                         <div class="hud-card hud-left float-card">
                             <div class="yt-screen-frame">
-                                <img src="assets/hud/yt_thumb.jpg" alt="YouTube Ad Creative" class="yt-thumb-bg">
+                                <img src="assets/hud/yt_thumb.jpg" alt="YouTube Ad Creative" class="yt-thumb-bg" width="600" height="350" decoding="async">
                                 <div class="yt-play-overlay">
                                     <div class="yt-play-btn"><i class="fa-solid fa-play"></i></div>
                                 </div>
@@ -371,7 +378,7 @@
 
                         <div class="hud-card hud-right float-card-delay">
                             <div class="reel-mockup">
-                                <img src="assets/hud/reel_thumb.jpg" alt="Viral Reel Creative" class="reel-thumb-bg">
+                                <img src="assets/hud/reel_thumb.jpg" alt="Viral Reel Creative" class="reel-thumb-bg" width="500" height="700" decoding="async">
                                 <div class="reel-overlay">
                                     <span class="reel-tag"><i class="fa-solid fa-play"></i> REEL // MOTION</span>
                                     <h4>Viral Ad Creatives That Convert</h4>
@@ -414,7 +421,7 @@
                                 <div class="window-url">adgrowx.com/client-funnel</div>
                             </div>
                             <div class="browser-inner-mock">
-                                <img src="assets/hud/web_funnel.jpg" alt="Web Funnel Interface" class="browser-thumb-img">
+                                <img src="assets/hud/web_funnel.jpg" alt="Web Funnel Interface" class="browser-thumb-img" width="600" height="380" decoding="async">
                                 <div class="browser-inner-overlay">
                                     <div class="browser-badge-live"><i class="fa-solid fa-bolt text-gold"></i> High-Converting Funnel</div>
                                     <span class="mock-cta">Direct Enquiry Action <i class="fa-solid fa-arrow-right"></i></span>
@@ -432,7 +439,7 @@
                             <div class="actor-badge text-gold"><i class="fa-solid fa-palette"></i> GRAPHIC DESIGN SUITE</div>
                             <h3>High-CTR Marketing Assets</h3>
                             <div class="design-preview-box">
-                                <img src="assets/hud/graphic_design.jpg" alt="Graphic Design Creative" class="design-preview-thumb">
+                                <img src="assets/hud/graphic_design.jpg" alt="Graphic Design Creative" class="design-preview-thumb" width="600" height="350" decoding="async">
                             </div>
                             <p>Custom-crafted social banners, carousel ads, and brand identity systems that capture attention in fast-scrolling feeds.</p>
                             <div class="targeting-pills-row">
@@ -998,16 +1005,16 @@
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
                             <div class="stack-hero-preview">
-                                <img src="assets/projects/bistro.jpg" alt="Kolkata Gourmet Bistro & Lounge" class="project-hero-img">
+                                <img src="assets/projects/bistro.jpg" alt="Kolkata Gourmet Bistro & Lounge" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
                                 <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
                             </div>
                             <div class="stack-thumbs-column">
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p1.jpg" alt="Dining Experience" class="project-thumb-img">
+                                    <img src="assets/projects/p1.jpg" alt="Dining Experience" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="img-badge">Meta Ads + Reels</div>
                                 </div>
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p2.jpg" alt="WhatsApp Reservations" class="project-thumb-img">
+                                    <img src="assets/projects/p2.jpg" alt="WhatsApp Reservations" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="img-badge">WhatsApp Funnel</div>
                                 </div>
                             </div>
@@ -1034,16 +1041,16 @@
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
                             <div class="stack-hero-preview">
-                                <img src="assets/projects/dental.jpg" alt="Aura Skin & Dental Aesthetics" class="project-hero-img">
+                                <img src="assets/projects/dental.jpg" alt="Aura Skin & Dental Aesthetics" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
                                 <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
                             </div>
                             <div class="stack-thumbs-column">
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p3.jpg" alt="Modern Clinic" class="project-thumb-img">
+                                    <img src="assets/projects/p3.jpg" alt="Modern Clinic" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="img-badge">Google Search Ads</div>
                                 </div>
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p4.jpg" alt="Consultation Funnel" class="project-thumb-img">
+                                    <img src="assets/projects/p4.jpg" alt="Consultation Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="img-badge">Landing Page CRO</div>
                                 </div>
                             </div>
@@ -1070,16 +1077,16 @@
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
                             <div class="stack-hero-preview">
-                                <img src="assets/projects/handloom.jpg" alt="Sutradhar D2C Handloom Boutique" class="project-hero-img">
+                                <img src="assets/projects/handloom.jpg" alt="Sutradhar D2C Handloom Boutique" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
                                 <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
                             </div>
                             <div class="stack-thumbs-column">
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p5.jpg" alt="Silk Saree Collection" class="project-thumb-img">
+                                    <img src="assets/projects/p5.jpg" alt="Silk Saree Collection" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="img-badge">Catalog Dynamic Ads</div>
                                 </div>
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p6.jpg" alt="Textile Art" class="project-thumb-img">
+                                    <img src="assets/projects/p6.jpg" alt="Textile Art" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="img-badge">Instagram Shopping</div>
                                 </div>
                             </div>
@@ -1106,16 +1113,16 @@
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
                             <div class="stack-hero-preview">
-                                <img src="assets/projects/academy.jpg" alt="Apex Civil Academy" class="project-hero-img">
+                                <img src="assets/projects/academy.jpg" alt="Apex Civil Academy" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
                                 <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
                             </div>
                             <div class="stack-thumbs-column">
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p7.jpg" alt="CAD Studio" class="project-thumb-img">
+                                    <img src="assets/projects/p7.jpg" alt="CAD Studio" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="img-badge">Webinar & Funnel</div>
                                 </div>
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p8.jpg" alt="Architecture" class="project-thumb-img">
+                                    <img src="assets/projects/p8.jpg" alt="Architecture" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="img-badge">YouTube Ads</div>
                                 </div>
                             </div>
@@ -1152,7 +1159,7 @@
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
                         <div class="testi-avatar-circle">
-                            <img src="assets/testimonials/arijit.jpg" alt="Arijit Sen" class="avatar-photo">
+                            <img src="assets/testimonials/arijit.jpg" alt="Arijit Sen" class="avatar-photo" width="512" height="512" loading="lazy" decoding="async">
                         </div>
                         <div class="testi-meta">
                             <h4>Arijit Sen</h4>
@@ -1170,7 +1177,7 @@
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
                         <div class="testi-avatar-circle">
-                            <img src="assets/testimonials/moumita.jpg" alt="Moumita Roy" class="avatar-photo">
+                            <img src="assets/testimonials/moumita.jpg" alt="Moumita Roy" class="avatar-photo" width="512" height="512" loading="lazy" decoding="async">
                         </div>
                         <div class="testi-meta">
                             <h4>Moumita Roy</h4>
@@ -1188,7 +1195,7 @@
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
                         <div class="testi-avatar-circle">
-                            <img src="assets/testimonials/sourav.jpg" alt="Sourav Ghosh" class="avatar-photo">
+                            <img src="assets/testimonials/sourav.jpg" alt="Sourav Ghosh" class="avatar-photo" width="512" height="512" loading="lazy" decoding="async">
                         </div>
                         <div class="testi-meta">
                             <h4>Sourav Ghosh</h4>
@@ -1206,7 +1213,7 @@
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
                         <div class="testi-avatar-circle">
-                            <img src="assets/testimonials/ananya.jpg" alt="Ananya Das" class="avatar-photo">
+                            <img src="assets/testimonials/ananya.jpg" alt="Ananya Das" class="avatar-photo" width="400" height="400" loading="lazy" decoding="async">
                         </div>
                         <div class="testi-meta">
                             <h4>Ananya Das</h4>
@@ -1224,7 +1231,7 @@
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
                         <div class="testi-avatar-circle">
-                            <img src="assets/testimonials/subhajit.jpg" alt="Subhajit Dutta" class="avatar-photo">
+                            <img src="assets/testimonials/subhajit.jpg" alt="Subhajit Dutta" class="avatar-photo" width="400" height="400" loading="lazy" decoding="async">
                         </div>
                         <div class="testi-meta">
                             <h4>Subhajit Dutta</h4>
@@ -1242,7 +1249,7 @@
                 <div class="testimonial-card reveal-slide">
                     <div class="testi-top">
                         <div class="testi-avatar-circle">
-                            <img src="assets/testimonials/debasish.jpg" alt="Debasish Paul" class="avatar-photo">
+                            <img src="assets/testimonials/debasish.jpg" alt="Debasish Paul" class="avatar-photo" width="400" height="400" loading="lazy" decoding="async">
                         </div>
                         <div class="testi-meta">
                             <h4>Debasish Paul</h4>

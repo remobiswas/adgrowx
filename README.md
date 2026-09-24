@@ -43,8 +43,9 @@ Open your browser and navigate to:
 ├── index.html           # Semantic HTML5 structure, HUD scenes & agency sections
 ├── style.css            # Responsive CSS design system, glassmorphic tokens & keyframes
 ├── script.js            # 60fps lerp canvas coordinator, HUD transitions & event handlers
-├── frames/              # 240 1080p PNG frames for the scroll-based visual stage
-│   └── video_frames_png/
+├── frames/              # 240 1080p frames for the scroll-based visual stage
+│   ├── video_frames_webp/ # High-performance WebP sequence (~13.6MB total)
+│   └── video_frames_png/  # Lossless PNG fallback
 ├── website screenshot/  # Reference visual UI mockups & components
 └── .gitignore           # Ignores large archive files
 ```
