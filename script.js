@@ -438,6 +438,68 @@ document.addEventListener('DOMContentLoaded', () => {
         counterElements.forEach(el => counterObserver.observe(el));
     }
 
+    // Projects Category Navigation & Interactive ScrollSpy
+    const catPills = document.querySelectorAll('.cat-pill');
+    const projectCards = document.querySelectorAll('.stack-card');
+    const catNavScroll = document.querySelector('.category-nav-scroll');
+
+    if (catPills.length > 0 && projectCards.length > 0) {
+        catPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                const targetId = pill.getAttribute('data-target');
+                catPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+
+                if (targetId === 'all') {
+                    const projectsSec = document.getElementById('projects');
+                    if (projectsSec) {
+                        const top = projectsSec.getBoundingClientRect().top + window.pageYOffset - 90;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                } else {
+                    const targetCard = document.getElementById(targetId);
+                    if (targetCard) {
+                        const cardTop = targetCard.getBoundingClientRect().top + window.pageYOffset - 110;
+                        window.scrollTo({ top: cardTop, behavior: 'smooth' });
+                        targetCard.classList.remove('highlight-pulse');
+                        void targetCard.offsetWidth; // Trigger reflow
+                        targetCard.classList.add('highlight-pulse');
+                    }
+                }
+            });
+        });
+
+        // IntersectionObserver for ScrollSpy in Category Bar
+        if ('IntersectionObserver' in window) {
+            const projectObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const cardId = entry.target.id;
+                        const matchingPill = document.querySelector(`.cat-pill[data-target="${cardId}"]`);
+                        if (matchingPill) {
+                            catPills.forEach(p => p.classList.remove('active'));
+                            matchingPill.classList.add('active');
+
+                            if (catNavScroll) {
+                                const pillLeft = matchingPill.offsetLeft;
+                                const containerW = catNavScroll.offsetWidth;
+                                catNavScroll.scrollTo({
+                                    left: pillLeft - containerW / 2 + matchingPill.offsetWidth / 2,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    }
+                });
+            }, {
+                rootMargin: '-20% 0px -55% 0px',
+                threshold: 0.1
+            });
+
+            projectCards.forEach(card => projectObserver.observe(card));
+        }
+    }
+
     // Debounced Resize Listener
     let resizeTimer;
     window.addEventListener('resize', () => {

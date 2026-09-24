@@ -1700,16 +1700,42 @@
                 </p>
             </div>
 
-            <!-- Stacking Cards Container (Screenshot 7 & 8 Style) -->
+            <!-- Category Filter / Interactive Jump Bar -->
+            <div class="projects-category-nav reveal-fade" id="projectsCategoryNav">
+                <div class="category-nav-scroll">
+                    <button class="cat-pill active" data-target="all" type="button"><span class="cat-icon">✨</span> All Sectors <span class="cat-count">20</span></button>
+                    <button class="cat-pill" data-target="projectCard1" type="button"><span class="cat-icon">💄</span> Makeup Artist</button>
+                    <button class="cat-pill" data-target="projectCard2" type="button"><span class="cat-icon">💇</span> Salon & Parlour</button>
+                    <button class="cat-pill" data-target="projectCard3" type="button"><span class="cat-icon">👗</span> Boutique & Fashion</button>
+                    <button class="cat-pill" data-target="projectCard4" type="button"><span class="cat-icon">🍽️</span> Restaurant & Cafe</button>
+                    <button class="cat-pill" data-target="projectCard5" type="button"><span class="cat-icon">🏋️</span> Gym & Fitness</button>
+                    <button class="cat-pill" data-target="projectCard6" type="button"><span class="cat-icon">📸</span> Photographer</button>
+                    <button class="cat-pill" data-target="projectCard7" type="button"><span class="cat-icon">🎂</span> Bakery & Cakes</button>
+                    <button class="cat-pill" data-target="projectCard8" type="button"><span class="cat-icon">💍</span> Jewellery</button>
+                    <button class="cat-pill" data-target="projectCard9" type="button"><span class="cat-icon">🏠</span> Interior Designer</button>
+                    <button class="cat-pill" data-target="projectCard10" type="button"><span class="cat-icon">🌸</span> Wedding Planner</button>
+                    <button class="cat-pill" data-target="projectCard11" type="button"><span class="cat-icon">🏨</span> Hotel & Resort</button>
+                    <button class="cat-pill" data-target="projectCard12" type="button"><span class="cat-icon">✈️</span> Travel Agency</button>
+                    <button class="cat-pill" data-target="projectCard13" type="button"><span class="cat-icon">📚</span> Coaching & Tuition</button>
+                    <button class="cat-pill" data-target="projectCard14" type="button"><span class="cat-icon">🐶</span> Pet Grooming</button>
+                    <button class="cat-pill" data-target="projectCard15" type="button"><span class="cat-icon">🚗</span> Car Rental</button>
+                    <button class="cat-pill" data-target="projectCard16" type="button"><span class="cat-icon">🦷</span> Dental Clinic</button>
+                    <button class="cat-pill" data-target="projectCard17" type="button"><span class="cat-icon">🏥</span> Diagnostic Clinic</button>
+                    <button class="cat-pill" data-target="projectCard18" type="button"><span class="cat-icon">🏪</span> Local Retail</button>
+                    <button class="cat-pill" data-target="projectCard19" type="button"><span class="cat-icon">💻</span> IT & Web Agency</button>
+                    <button class="cat-pill" data-target="projectCard20" type="button"><span class="cat-icon">🏢</span> Real Estate</button>
+                </div>
+            </div>
+
+            <!-- Stacking Cards Container (20 Specialized Industry Solutions) -->
             <div class="stacking-cards-container">
-                
                 <div class="stack-card card-01" id="projectCard1">
                     <div class="stack-card-header">
                         <div class="stack-meta">
                             <span class="stack-index">01</span>
                             <div class="stack-client-info">
-                                <span class="client-label">CLIENT</span>
-                                <strong class="client-name">Kolkata Gourmet Bistro & Lounge</strong>
+                                <span class="client-label">💄 MAKEUP ARTIST &bull; BRIDAL ARTISTRY</span>
+                                <strong class="client-name">Zoya Luxury Bridal Artistry & Glow Studio</strong>
                             </div>
                         </div>
                         <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
@@ -1717,35 +1743,43 @@
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
                             <div class="stack-hero-preview">
-                                <img src="assets/projects/bistro.jpg" alt="Kolkata Gourmet Bistro & Lounge" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                <picture>
+                                    <source srcset="assets/projects/categories/01_makeup_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/01_makeup_hero.jpg" alt="Zoya Luxury Bridal Artistry & Glow Studio" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
                                 <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
                             </div>
                             <div class="stack-thumbs-column">
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p1.jpg" alt="Dining Experience" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
-                                    <div class="img-badge">Meta Ads + Reels</div>
+                                    <picture>
+                                        <source srcset="assets/projects/categories/01_makeup_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/01_makeup_t1.jpg" alt="Zoya Luxury Bridal Artistry & Glow Studio Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Bridal Lookbook Reel</div>
                                 </div>
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p2.jpg" alt="WhatsApp Reservations" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
-                                    <div class="img-badge">WhatsApp Funnel</div>
+                                    <picture>
+                                        <source srcset="assets/projects/categories/01_makeup_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/01_makeup_t2.jpg" alt="Zoya Luxury Bridal Artistry & Glow Studio Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">VIP Appointment Bot</div>
                                 </div>
                             </div>
                         </div>
                         <div class="stack-details-row">
-                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Weekend Dining Bookings</strong></div>
-                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Hyper-local Geo Ads + WhatsApp</strong></div>
-                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">340+ Table Inquiries / Mo (Demo)</strong></div>
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">High-Ticket Bridal Season Bookings</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Instagram Reels Portfolio + Lookbook Funnel</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">140+ Peak Season Bridal Inquiries (Demo)</strong></div>
                         </div>
                     </div>
                 </div>
-
                 <div class="stack-card card-02" id="projectCard2">
                     <div class="stack-card-header">
                         <div class="stack-meta">
                             <span class="stack-index">02</span>
                             <div class="stack-client-info">
-                                <span class="client-label">CLIENT</span>
-                                <strong class="client-name">Aura Skin & Dental Aesthetics</strong>
+                                <span class="client-label">💇 SALON &bull; BEAUTY PARLOUR</span>
+                                <strong class="client-name">Enchanté Hair Lounge & Premium Spa</strong>
                             </div>
                         </div>
                         <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
@@ -1753,34 +1787,42 @@
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
                             <div class="stack-hero-preview">
-                                <img src="assets/projects/dental.jpg" alt="Aura Skin & Dental Aesthetics" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                <picture>
+                                    <source srcset="assets/projects/categories/02_salon_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/02_salon_hero.jpg" alt="Enchanté Hair Lounge & Premium Spa" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
                                 <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
                             </div>
                             <div class="stack-thumbs-column">
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p3.jpg" alt="Modern Clinic" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
-                                    <div class="img-badge">Google Search Ads</div>
+                                    <picture>
+                                        <source srcset="assets/projects/categories/02_salon_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/02_salon_t1.jpg" alt="Enchanté Hair Lounge & Premium Spa Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Balayage Transformation</div>
                                 </div>
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p4.jpg" alt="Consultation Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
-                                    <div class="img-badge">Landing Page CRO</div>
+                                    <picture>
+                                        <source srcset="assets/projects/categories/02_salon_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/02_salon_t2.jpg" alt="Enchanté Hair Lounge & Premium Spa Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">WhatsApp Salon Booking</div>
                                 </div>
                             </div>
                         </div>
                         <div class="stack-details-row">
-                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">High-Ticket Appointments</strong></div>
-                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Search Intent + Quality Score 9/10</strong></div>
-                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">4.6x Consultation Pipeline (Demo)</strong></div>
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Weekday Appointment Fill-Rates</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Geo-Targeted Meta Ads + Slot Booking Engine</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">+165% Bookings & 4.2x ROAS (Demo)</strong></div>
                         </div>
                     </div>
                 </div>
-
                 <div class="stack-card card-03" id="projectCard3">
                     <div class="stack-card-header">
                         <div class="stack-meta">
                             <span class="stack-index">03</span>
                             <div class="stack-client-info">
-                                <span class="client-label">CLIENT</span>
+                                <span class="client-label">👗 BOUTIQUE &bull; CLOTHING STORE</span>
                                 <strong class="client-name">Sutradhar D2C Handloom Boutique</strong>
                             </div>
                         </div>
@@ -1789,16 +1831,25 @@
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
                             <div class="stack-hero-preview">
-                                <img src="assets/projects/handloom.jpg" alt="Sutradhar D2C Handloom Boutique" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                <picture>
+                                    <source srcset="assets/projects/categories/03_boutique_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/03_boutique_hero.jpg" alt="Sutradhar D2C Handloom Boutique" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
                                 <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
                             </div>
                             <div class="stack-thumbs-column">
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p5.jpg" alt="Silk Saree Collection" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/03_boutique_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/03_boutique_t1.jpg" alt="Sutradhar D2C Handloom Boutique Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
                                     <div class="img-badge">Catalog Dynamic Ads</div>
                                 </div>
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p6.jpg" alt="Textile Art" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/03_boutique_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/03_boutique_t2.jpg" alt="Sutradhar D2C Handloom Boutique Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
                                     <div class="img-badge">Instagram Shopping</div>
                                 </div>
                             </div>
@@ -1810,13 +1861,408 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="stack-card card-04" id="projectCard4">
                     <div class="stack-card-header">
                         <div class="stack-meta">
                             <span class="stack-index">04</span>
                             <div class="stack-client-info">
-                                <span class="client-label">CLIENT</span>
+                                <span class="client-label">🍽️ RESTAURANT &bull; CAFE</span>
+                                <strong class="client-name">Kolkata Gourmet Bistro & Lounge</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/04_restaurant_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/04_restaurant_hero.jpg" alt="Kolkata Gourmet Bistro & Lounge" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/04_restaurant_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/04_restaurant_t1.jpg" alt="Kolkata Gourmet Bistro & Lounge Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Meta Ads + Reels</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/04_restaurant_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/04_restaurant_t2.jpg" alt="Kolkata Gourmet Bistro & Lounge Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">WhatsApp Funnel</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Weekend Dining Bookings</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Hyper-local Geo Ads + WhatsApp</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">340+ Table Inquiries / Mo (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-05" id="projectCard5">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">05</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🏋️ GYM &bull; FITNESS STUDIO</span>
+                                <strong class="client-name">IronPulse Crossfit & High-Performance Club</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/05_gym_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/05_gym_hero.jpg" alt="IronPulse Crossfit & High-Performance Club" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/05_gym_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/05_gym_t1.jpg" alt="IronPulse Crossfit & High-Performance Club Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Free 3-Day Pass Ads</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/05_gym_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/05_gym_t2.jpg" alt="IronPulse Crossfit & High-Performance Club Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Strength Community</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Annual Membership Sign-Ups</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">High-Energy Video Ads + Automated SMS Funnel</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">210+ New Membership Closes (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-06" id="projectCard6">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">06</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">📸 PHOTOGRAPHER &bull; VIDEOGRAPHER</span>
+                                <strong class="client-name">Luminary Cinema & Destination Wedding Visuals</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/06_photographer_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/06_photographer_hero.jpg" alt="Luminary Cinema & Destination Wedding Visuals" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/06_photographer_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/06_photographer_t1.jpg" alt="Luminary Cinema & Destination Wedding Visuals Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">4K Cinema Showreel</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/06_photographer_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/06_photographer_t2.jpg" alt="Luminary Cinema & Destination Wedding Visuals Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Luxury Lookbook PDF</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Destination Wedding Contracts</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">High-Definition Storytelling + PDF Lead Magnet</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">28 Destination Shoot Bookings (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-07" id="projectCard7">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">07</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🎂 CAKE &bull; BAKERY BUSINESS</span>
+                                <strong class="client-name">Velvet Crumb Artisanal Patisserie & Bakery</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/07_bakery_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/07_bakery_hero.jpg" alt="Velvet Crumb Artisanal Patisserie & Bakery" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/07_bakery_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/07_bakery_t1.jpg" alt="Velvet Crumb Artisanal Patisserie & Bakery Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Artisan Sourdough Ads</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/07_bakery_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/07_bakery_t2.jpg" alt="Velvet Crumb Artisanal Patisserie & Bakery Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Custom Cake WhatsApp</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Bespoke Celebration Cake Orders</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Geo-Fenced Instagram Showcase + Instant Chat Orders</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">380+ Cake Pre-Orders / Month (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-08" id="projectCard8">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">08</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">💍 JEWELLERY &bull; ACCESSORIES BUSINESS</span>
+                                <strong class="client-name">Royal Aurum Fine Diamond & Heritage Jewellery</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/08_jewellery_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/08_jewellery_hero.jpg" alt="Royal Aurum Fine Diamond & Heritage Jewellery" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/08_jewellery_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/08_jewellery_t1.jpg" alt="Royal Aurum Fine Diamond & Heritage Jewellery Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Bridal Choker Suite</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/08_jewellery_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/08_jewellery_t2.jpg" alt="Royal Aurum Fine Diamond & Heritage Jewellery Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Store VIP Walk-in Ads</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">High-Ticket Bridal Walk-ins</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Heritage Storytelling Ads + Google Search Intent</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">₹42L+ Attributed Bridal Pipeline (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-09" id="projectCard9">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">09</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🏠 INTERIOR DESIGNER</span>
+                                <strong class="client-name">Obsidian & Oak Luxury Architecture & Interiors</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/09_interior_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/09_interior_hero.jpg" alt="Obsidian & Oak Luxury Architecture & Interiors" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/09_interior_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/09_interior_t1.jpg" alt="Obsidian & Oak Luxury Architecture & Interiors Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">3D Walkthrough Ads</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/09_interior_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/09_interior_t2.jpg" alt="Obsidian & Oak Luxury Architecture & Interiors Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Villa Consultation Funnel</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Turnkey Residential & Penthouse Deals</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">CGI Walkthrough Video Ads + Lead Qualification Quiz</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">18 High-Ticket Turnkey Contracts (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-10" id="projectCard10">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">10</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🌸 EVENT &bull; WEDDING PLANNER</span>
+                                <strong class="client-name">Vows & Velvet Grand Celebrations & Destination Events</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/10_events_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/10_events_hero.jpg" alt="Vows & Velvet Grand Celebrations & Destination Events" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/10_events_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/10_events_t1.jpg" alt="Vows & Velvet Grand Celebrations & Destination Events Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Fairytale Mandap Design</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/10_events_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/10_events_t2.jpg" alt="Vows & Velvet Grand Celebrations & Destination Events Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Budget Calculator Bot</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Full-Service Luxury Wedding Leads</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Experiential Video Carousels + Wedding Estimator</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">35+ Full Wedding Contracts Signed (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-11" id="projectCard11">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">11</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🏨 HOTEL &bull; RESORT</span>
+                                <strong class="client-name">Serene Mist Hill Resort & Luxury Retreat</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/11_hotel_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/11_hotel_hero.jpg" alt="Serene Mist Hill Resort & Luxury Retreat" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/11_hotel_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/11_hotel_t1.jpg" alt="Serene Mist Hill Resort & Luxury Retreat Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Google Travel Ads</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/11_hotel_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/11_hotel_t2.jpg" alt="Serene Mist Hill Resort & Luxury Retreat Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Direct Booking Discount</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Direct Website Bookings (Zero OTA Commission)</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Performance Max for Travel + Retargeting Offers</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">+220% Direct Bookings vs OTAs (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-12" id="projectCard12">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">12</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">✈️ TRAVEL AGENCY</span>
+                                <strong class="client-name">Wanderlust Horizons International Tours & Visas</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/12_travel_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/12_travel_hero.jpg" alt="Wanderlust Horizons International Tours & Visas" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/12_travel_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/12_travel_t1.jpg" alt="Wanderlust Horizons International Tours & Visas Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Bali & Europe Packages</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/12_travel_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/12_travel_t2.jpg" alt="Wanderlust Horizons International Tours & Visas Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Instant Itinerary PDF</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">International Tour Package Sales</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Dynamic Multi-Destination Ads + WhatsApp Itinerary Bot</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">450+ Qualified Tour Inquiries (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-13" id="projectCard13">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">13</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">📚 COACHING &bull; TUITION CENTRE</span>
                                 <strong class="client-name">Apex Civil & Architectural Academy</strong>
                             </div>
                         </div>
@@ -1825,16 +2271,25 @@
                     <div class="stack-card-body">
                         <div class="stack-visual-grid">
                             <div class="stack-hero-preview">
-                                <img src="assets/projects/academy.jpg" alt="Apex Civil Academy" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                <picture>
+                                    <source srcset="assets/projects/categories/13_coaching_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/13_coaching_hero.jpg" alt="Apex Civil & Architectural Academy" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
                                 <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
                             </div>
                             <div class="stack-thumbs-column">
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p7.jpg" alt="CAD Studio" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/13_coaching_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/13_coaching_t1.jpg" alt="Apex Civil & Architectural Academy Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
                                     <div class="img-badge">Webinar & Funnel</div>
                                 </div>
                                 <div class="stack-preview-img">
-                                    <img src="assets/projects/p8.jpg" alt="Architecture" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/13_coaching_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/13_coaching_t2.jpg" alt="Apex Civil & Architectural Academy Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
                                     <div class="img-badge">YouTube Ads</div>
                                 </div>
                             </div>
@@ -1846,7 +2301,314 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="stack-card card-14" id="projectCard14">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">14</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🐶 PET GROOMING</span>
+                                <strong class="client-name">Paws & Posh Luxury Pet Spa & Grooming Studio</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/14_petcare_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/14_petcare_hero.jpg" alt="Paws & Posh Luxury Pet Spa & Grooming Studio" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/14_petcare_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/14_petcare_t1.jpg" alt="Paws & Posh Luxury Pet Spa & Grooming Studio Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Hydrobath Spa Promo</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/14_petcare_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/14_petcare_t2.jpg" alt="Paws & Posh Luxury Pet Spa & Grooming Studio Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Monthly Care Subscription</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Monthly Recurring Spa Subscriptions</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Hyper-local Pet Parent Meta Ads + 1-Tap Booking</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">190+ Regular Grooming Subscriptions (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-15" id="projectCard15">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">15</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🚗 CAR RENTAL</span>
+                                <strong class="client-name">Apex Drive Luxury Self-Drive & Chauffeur Fleet</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/15_carrental_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/15_carrental_hero.jpg" alt="Apex Drive Luxury Self-Drive & Chauffeur Fleet" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/15_carrental_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/15_carrental_t1.jpg" alt="Apex Drive Luxury Self-Drive & Chauffeur Fleet Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Airport Transfer Fast-Track</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/15_carrental_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/15_carrental_t2.jpg" alt="Apex Drive Luxury Self-Drive & Chauffeur Fleet Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Self-Drive Luxury Fleet</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Corporate & Airport Fleet Bookings</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">High-Intent Google Ads + Instant WhatsApp Pricing</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">85% Fleet Utilization Rate (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-16" id="projectCard16">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">16</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🦷 DENTAL CLINIC</span>
+                                <strong class="client-name">Aura Skin & Dental Aesthetics</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/16_dental_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/16_dental_hero.jpg" alt="Aura Skin & Dental Aesthetics" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/16_dental_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/16_dental_t1.jpg" alt="Aura Skin & Dental Aesthetics Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Google Search Ads</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/16_dental_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/16_dental_t2.jpg" alt="Aura Skin & Dental Aesthetics Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Landing Page CRO</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">High-Ticket Appointments</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Search Intent + Quality Score 9/10</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">4.6x Consultation Pipeline (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-17" id="projectCard17">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">17</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🏥 CLINIC &bull; DIAGNOSTIC CENTRE</span>
+                                <strong class="client-name">CarePlus Multispeciality & Advanced Diagnostics</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/17_clinic_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/17_clinic_hero.jpg" alt="CarePlus Multispeciality & Advanced Diagnostics" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/17_clinic_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/17_clinic_t1.jpg" alt="CarePlus Multispeciality & Advanced Diagnostics Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Full Body Health Checkup</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/17_clinic_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/17_clinic_t2.jpg" alt="CarePlus Multispeciality & Advanced Diagnostics Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Home Sample Collection</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Preventive Health Package Bookings</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Hyperlocal Search Ads + WhatsApp Test Booking</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">640+ Diagnostic Bookings / Mo (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-18" id="projectCard18">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">18</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🏪 LOCAL SHOP &bull; RETAIL BUSINESS</span>
+                                <strong class="client-name">Urban Heritage Organic Provisions & Gourmet Market</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/18_retail_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/18_retail_hero.jpg" alt="Urban Heritage Organic Provisions & Gourmet Market" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/18_retail_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/18_retail_t1.jpg" alt="Urban Heritage Organic Provisions & Gourmet Market Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Weekend Flash Sale Ads</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/18_retail_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/18_retail_t2.jpg" alt="Urban Heritage Organic Provisions & Gourmet Market Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Local WhatsApp Catalog</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Neighborhood Footfall & Loyalty Sign-Ups</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Pincode-Targeted Meta Ads + Digital Loyalty Pass</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">+75% Daily Store Footfall (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-19" id="projectCard19">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">19</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">💻 IT &bull; WEB DESIGN AGENCY</span>
+                                <strong class="client-name">HyperNova Digital Studio & Enterprise SaaS Dev</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/19_itagency_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/19_itagency_hero.jpg" alt="HyperNova Digital Studio & Enterprise SaaS Dev" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/19_itagency_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/19_itagency_t1.jpg" alt="HyperNova Digital Studio & Enterprise SaaS Dev Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">B2B LinkedIn Funnels</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/19_itagency_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/19_itagency_t2.jpg" alt="HyperNova Digital Studio & Enterprise SaaS Dev Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Custom WebApp CRO</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">Global B2B Software & Redesign Contracts</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">LinkedIn Sponsored InMail + Technical Case Studies</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">14 Enterprise Retainers Closed (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack-card card-20" id="projectCard20">
+                    <div class="stack-card-header">
+                        <div class="stack-meta">
+                            <span class="stack-index">20</span>
+                            <div class="stack-client-info">
+                                <span class="client-label">🏢 REAL ESTATE BUSINESS</span>
+                                <strong class="client-name">Skyline Heights Luxury Towers & Smart Residences</strong>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-capsule btn-outline-light">LIVE PROJECT</a>
+                    </div>
+                    <div class="stack-card-body">
+                        <div class="stack-visual-grid">
+                            <div class="stack-hero-preview">
+                                <picture>
+                                    <source srcset="assets/projects/categories/20_realestate_hero.webp" type="image/webp">
+                                    <img src="assets/projects/categories/20_realestate_hero.jpg" alt="Skyline Heights Luxury Towers & Smart Residences" class="project-hero-img" width="1376" height="768" loading="lazy" decoding="async">
+                                </picture>
+                                <div class="img-badge"><i class="fa-solid fa-camera"></i> Live Showcase</div>
+                            </div>
+                            <div class="stack-thumbs-column">
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/20_realestate_t1.webp" type="image/webp">
+                                        <img src="assets/projects/categories/20_realestate_t1.jpg" alt="Skyline Heights Luxury Towers & Smart Residences Strategy" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Virtual 3D Walkthrough</div>
+                                </div>
+                                <div class="stack-preview-img">
+                                    <picture>
+                                        <source srcset="assets/projects/categories/20_realestate_t2.webp" type="image/webp">
+                                        <img src="assets/projects/categories/20_realestate_t2.jpg" alt="Skyline Heights Luxury Towers & Smart Residences Funnel" class="project-thumb-img" width="800" height="500" loading="lazy" decoding="async">
+                                    </picture>
+                                    <div class="img-badge">Instant Callback CRM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stack-details-row">
+                            <div class="detail-item"><span class="d-label">OBJECTIVE</span><strong class="d-val">HNW Buyers for 3BHK & Luxury Penthouses</strong></div>
+                            <div class="detail-item"><span class="d-label">STRATEGY</span><strong class="d-val">Virtual Tour Video Ads + Automated Priority Callback</strong></div>
+                            <div class="detail-item"><span class="d-label">OUTCOME</span><strong class="d-val text-red">₹18.5 Cr Property Sales Generated (Demo)</strong></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
