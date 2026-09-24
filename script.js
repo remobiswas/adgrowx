@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Frame Path Formatter (e.g. frames/video_frames_png/frame_0001.png)
     const getFramePath = (index) => {
         const padded = index.toString().padStart(4, '0');
-        return `frames/video_frames_png/frame_${padded}.png`;
+        return `frames/video_frames_png/frame_${padded}.png?v=clean`;
     };
 
     // Canvas Resize with Cover Math & Retina DPR
