@@ -1,6 +1,6 @@
-# Remo Biswas — Founder of AdGrowX
+# Remo Biswas — Founder of AdgrowX
 
-A modern, highly-animated scroll-based personal portfolio and digital marketing agency website for **Remo Biswas**, Founder of **AdGrowX** (7+ Years Experience).
+A modern, highly-animated scroll-based personal portfolio and digital marketing agency website for **Remo Biswas**, Founder of **AdgrowX** (7+ Years Experience).
 
 ---
 
@@ -54,5 +54,5 @@ Open your browser and navigate to:
 ## 👤 Author
 
 **Remo Biswas**  
-*Digital Marketer • Founder of AdGrowX*  
+*Digital Marketer • Founder of AdgrowX*  
 - Focus: Meta Ads • Google Ads • SEO • Conversion Funnels • Growth Architecture

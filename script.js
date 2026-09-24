@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * REMO BISWAS • DIGITAL MARKETER • FOUNDER OF ADGROWX
+ * REMO BISWAS • DIGITAL MARKETER • FOUNDER OF AdgrowX
  * SCROLL ENGINE • 240-FRAME CANVAS • MARKETING HUD COORDINATOR
  * ==========================================================================
  */
