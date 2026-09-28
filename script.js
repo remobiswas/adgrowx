@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Canvas Resize with Cover Math & Retina DPR (Capped at 1.75 to save mobile GPU fillrate)
+    let lastWindowWidth = window.innerWidth;
     const resizeCanvas = () => {
         const dpr = Math.min(window.devicePixelRatio || 1, 1.75);
         canvas.width = Math.round(window.innerWidth * dpr);
@@ -345,6 +346,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 3. Highlight Navbar Active Section
         updateNavbarActive(scrollTop);
+
+        // 4. Update Projects Active Category Pill (Deterministic, smooth scroll-spy)
+        updateProjectsActivePill();
     };
 
     // Smooth Lerp Animation Loop (Pauses when cinematic stage is off-screen)
@@ -442,25 +446,78 @@ document.addEventListener('DOMContentLoaded', () => {
     const catPills = document.querySelectorAll('.cat-pill');
     const projectCards = document.querySelectorAll('.stack-card');
     const catNavScroll = document.querySelector('.category-nav-scroll');
+    let lastActivePillTarget = 'all';
+
+    const updateProjectsActivePill = () => {
+        const projectsSec = document.getElementById('projects');
+        if (!projectsSec || catPills.length === 0 || projectCards.length === 0) return;
+        const pRect = projectsSec.getBoundingClientRect();
+
+        // If projects section is out of range, do nothing
+        if (pRect.bottom < 80 || pRect.top > window.innerHeight) return;
+
+        const isMobile = window.innerWidth <= 768;
+        const stickyThreshold = isMobile ? 85 : 165;
+
+        let activeCardId = 'all';
+
+        // Check cards from last (20) down to first (1)
+        for (let i = projectCards.length - 1; i >= 0; i--) {
+            const card = projectCards[i];
+            const r = card.getBoundingClientRect();
+            if (r.top <= stickyThreshold && r.bottom > stickyThreshold) {
+                activeCardId = card.id;
+                break;
+            }
+        }
+
+        // If before first card reaches sticky threshold
+        if (activeCardId === 'all' && projectCards.length > 0) {
+            const firstRect = projectCards[0].getBoundingClientRect();
+            if (firstRect.top <= stickyThreshold) {
+                activeCardId = projectCards[0].id;
+            }
+        }
+
+        if (activeCardId !== lastActivePillTarget) {
+            lastActivePillTarget = activeCardId;
+            const matchingPill = document.querySelector(`.cat-pill[data-target="${activeCardId}"]`);
+            if (matchingPill) {
+                catPills.forEach(p => p.classList.remove('active'));
+                matchingPill.classList.add('active');
+
+                if (catNavScroll) {
+                    const pillLeft = matchingPill.offsetLeft;
+                    const containerW = catNavScroll.offsetWidth;
+                    catNavScroll.scrollTo({
+                        left: pillLeft - containerW / 2 + matchingPill.offsetWidth / 2,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }
+    };
 
     if (catPills.length > 0 && projectCards.length > 0) {
         catPills.forEach(pill => {
-            pill.addEventListener('click', () => {
+            pill.addEventListener('click', (e) => {
+                e.preventDefault();
                 const targetId = pill.getAttribute('data-target');
                 catPills.forEach(p => p.classList.remove('active'));
                 pill.classList.add('active');
+                lastActivePillTarget = targetId;
+
+                const isMobile = window.innerWidth <= 768;
 
                 if (targetId === 'all') {
                     const projectsSec = document.getElementById('projects');
                     if (projectsSec) {
-                        const top = projectsSec.getBoundingClientRect().top + window.pageYOffset - 90;
-                        window.scrollTo({ top, behavior: 'smooth' });
+                        projectsSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                 } else {
                     const targetCard = document.getElementById(targetId);
                     if (targetCard) {
-                        const cardTop = targetCard.getBoundingClientRect().top + window.pageYOffset - 110;
-                        window.scrollTo({ top: cardTop, behavior: 'smooth' });
+                        targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
                         targetCard.classList.remove('highlight-pulse');
                         void targetCard.offsetWidth; // Trigger reflow
                         targetCard.classList.add('highlight-pulse');
@@ -468,44 +525,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
-
-        // IntersectionObserver for ScrollSpy in Category Bar
-        if ('IntersectionObserver' in window) {
-            const projectObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const cardId = entry.target.id;
-                        const matchingPill = document.querySelector(`.cat-pill[data-target="${cardId}"]`);
-                        if (matchingPill) {
-                            catPills.forEach(p => p.classList.remove('active'));
-                            matchingPill.classList.add('active');
-
-                            if (catNavScroll) {
-                                const pillLeft = matchingPill.offsetLeft;
-                                const containerW = catNavScroll.offsetWidth;
-                                catNavScroll.scrollTo({
-                                    left: pillLeft - containerW / 2 + matchingPill.offsetWidth / 2,
-                                    behavior: 'smooth'
-                                });
-                            }
-                        }
-                    }
-                });
-            }, {
-                rootMargin: '-20% 0px -55% 0px',
-                threshold: 0.1
-            });
-
-            projectCards.forEach(card => projectObserver.observe(card));
-        }
     }
 
-    // Debounced Resize Listener
+    // Debounced Resize Listener (Ignores mobile address-bar height-only jitter)
     let resizeTimer;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
-            resizeCanvas();
+            const currentWidth = window.innerWidth;
+            if (Math.abs(currentWidth - lastWindowWidth) > 10) {
+                lastWindowWidth = currentWidth;
+                resizeCanvas();
+            }
             cacheSectionMetrics();
             onScrollFrame();
         }, 100);

@@ -63,6 +63,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+section[id], .cinematic-scroll-container {
+  scroll-margin-top: 80px;
+}
+
+.stack-card {
+  scroll-margin-top: 100px;
+}
+
+.sim-banner picture,
+.sim-avatar picture,
+.yt-screen-frame picture,
+.reel-mockup picture,
+.browser-inner-mock picture,
+.design-preview-box picture,
+.testi-avatar-circle picture,
+.project-hero-wrap picture,
+.stack-preview-img picture {
+  display: contents;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -2889,6 +2909,9 @@ button {
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.75);
   margin-bottom: 2.75rem;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 .stack-card:hover {
@@ -2898,6 +2921,7 @@ button {
 
 .stack-card.highlight-pulse {
   animation: cardPulse 1.4s ease-out;
+  z-index: 50 !important;
 }
 
 @keyframes cardPulse {
@@ -2914,26 +2938,26 @@ button {
   }
 }
 
-.stack-card.card-01 { top: 96px;  background: #131622; }
-.stack-card.card-02 { top: 99px;  background: #121520; }
-.stack-card.card-03 { top: 102px; background: #11141f; }
-.stack-card.card-04 { top: 105px; background: #10131e; }
-.stack-card.card-05 { top: 108px; background: #0f121d; }
-.stack-card.card-06 { top: 111px; background: #0e111c; }
-.stack-card.card-07 { top: 114px; background: #0d101a; }
-.stack-card.card-08 { top: 117px; background: #10121d; }
-.stack-card.card-09 { top: 120px; background: #111420; }
-.stack-card.card-10 { top: 123px; background: #131622; }
-.stack-card.card-11 { top: 126px; background: #121520; }
-.stack-card.card-12 { top: 129px; background: #11141f; }
-.stack-card.card-13 { top: 132px; background: #10131e; }
-.stack-card.card-14 { top: 135px; background: #0f121d; }
-.stack-card.card-15 { top: 138px; background: #0e111c; }
-.stack-card.card-16 { top: 141px; background: #0d101a; }
-.stack-card.card-17 { top: 144px; background: #10121d; }
-.stack-card.card-18 { top: 147px; background: #111420; }
-.stack-card.card-19 { top: 150px; background: #131622; }
-.stack-card.card-20 { top: 153px; background: #0e1019; }
+.stack-card.card-01 { top: 96px;  z-index: 1;  background: #131622; }
+.stack-card.card-02 { top: 99px;  z-index: 2;  background: #121520; }
+.stack-card.card-03 { top: 102px; z-index: 3;  background: #11141f; }
+.stack-card.card-04 { top: 105px; z-index: 4;  background: #10131e; }
+.stack-card.card-05 { top: 108px; z-index: 5;  background: #0f121d; }
+.stack-card.card-06 { top: 111px; z-index: 6;  background: #0e111c; }
+.stack-card.card-07 { top: 114px; z-index: 7;  background: #0d101a; }
+.stack-card.card-08 { top: 117px; z-index: 8;  background: #10121d; }
+.stack-card.card-09 { top: 120px; z-index: 9;  background: #111420; }
+.stack-card.card-10 { top: 123px; z-index: 10; background: #131622; }
+.stack-card.card-11 { top: 126px; z-index: 11; background: #121520; }
+.stack-card.card-12 { top: 129px; z-index: 12; background: #11141f; }
+.stack-card.card-13 { top: 132px; z-index: 13; background: #10131e; }
+.stack-card.card-14 { top: 135px; z-index: 14; background: #0f121d; }
+.stack-card.card-15 { top: 138px; z-index: 15; background: #0e111c; }
+.stack-card.card-16 { top: 141px; z-index: 16; background: #0d101a; }
+.stack-card.card-17 { top: 144px; z-index: 17; background: #10121d; }
+.stack-card.card-18 { top: 147px; z-index: 18; background: #111420; }
+.stack-card.card-19 { top: 150px; z-index: 19; background: #131622; }
+.stack-card.card-20 { top: 153px; z-index: 20; background: #0e1019; }
 
 .stack-card-header {
   display: flex;
@@ -3486,6 +3510,40 @@ button {
     gap: 4.25rem 2rem;
   }
 
+  .stack-card {
+    top: 84px !important;
+    scroll-margin-top: 84px;
+    padding: 1.6rem;
+    border-radius: 20px;
+    margin-bottom: 2.25rem;
+    contain: paint layout;
+  }
+
+  .stack-visual-grid {
+    grid-template-columns: 1.3fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .stack-hero-preview {
+    height: 220px;
+  }
+
+  .stack-thumbs-column {
+    height: 220px;
+    gap: 0.85rem;
+  }
+
+  .stack-preview-img {
+    height: 100px;
+  }
+
+  .stack-details-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
   .footer-content-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
@@ -3499,6 +3557,11 @@ button {
 
   .mobile-toggle {
     display: flex;
+  }
+
+  /* Fixed nav scroll clearance */
+  section[id], .cinematic-scroll-container {
+    scroll-margin-top: 68px;
   }
 
   /* Keep character visible on mobile by stacking panels top/bottom */
@@ -3528,6 +3591,11 @@ button {
     align-items: center;
   }
 
+  /* Prevent bottom prompt collision with scene navigation pill */
+  .scroll-prompt-pill {
+    display: none;
+  }
+
   .services-cards-grid {
     grid-template-columns: 1fr;
     gap: 4.25rem 1.5rem;
@@ -3537,60 +3605,122 @@ button {
   }
 
   .projects-category-nav {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+    z-index: 25;
   }
 
   .cat-pill {
-    padding: 0.45rem 0.9rem;
-    font-size: 0.76rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
   }
 
+  /* STACKING CARDS: COMPACT, CRISP & ZERO-GLITCH MOBILE STACKING */
   .stack-card {
-    top: 75px !important;
-    padding: 1.25rem;
+    top: 68px !important;
+    scroll-margin-top: 68px;
+    padding: 1rem 1rem 1.15rem;
     border-radius: 18px;
     margin-bottom: 2rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+    contain: paint layout;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    will-change: transform;
   }
 
   .stack-card-header {
-    margin-bottom: 1.25rem;
-    padding-bottom: 0.85rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.65rem;
+    gap: 0.5rem;
   }
 
   .stack-meta {
-    gap: 1rem;
+    gap: 0.75rem;
+    min-width: 0;
   }
 
   .stack-index {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    line-height: 1;
+  }
+
+  .stack-client-info {
+    min-width: 0;
+  }
+
+  .stack-client-info .client-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
   }
 
   .stack-client-info .client-name {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+    line-height: 1.25;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .stack-card-header .btn-capsule {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.65rem;
+    flex-shrink: 0;
   }
 
   .stack-visual-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.65rem;
+    margin-bottom: 0.75rem;
   }
 
   .stack-hero-preview {
-    height: 200px;
+    height: 160px;
+    border-radius: 12px;
   }
 
   .stack-thumbs-column {
     height: auto;
     flex-direction: row;
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
 
   .stack-preview-img {
-    height: 120px;
+    height: 80px;
+    border-radius: 10px;
+    flex: 1;
+  }
+
+  .img-badge {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.62rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    gap: 0.3rem;
   }
 
   .stack-details-row {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.55rem 0.75rem;
+    padding: 0.75rem 0.85rem;
+    border-radius: 10px;
+  }
+
+  .stack-details-row .detail-item:last-child {
+    grid-column: 1 / -1;
+    border-top: 1px dashed rgba(255, 255, 255, 0.12);
+    padding-top: 0.45rem;
+    margin-top: 0.15rem;
+  }
+
+  .detail-item .d-label {
+    font-size: 0.62rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .detail-item .d-val {
+    font-size: 0.8rem;
+    line-height: 1.25;
   }
 
   .footer-content-grid {
@@ -3648,13 +3778,8 @@ button {
     font-size: 0.76rem;
   }
 
-  .scroll-prompt-pill {
-    font-size: 0.68rem;
-    padding: 0.4rem 0.9rem;
-  }
-
   .section-container {
-    padding: 0 1.25rem;
+    padding: 0 1rem;
   }
 
   .about-section,
@@ -3662,7 +3787,39 @@ button {
   .projects-section,
   .testimonials-section,
   .contact-cta-section {
-    padding: 4.5rem 0;
+    padding: 3.5rem 0;
+  }
+
+  /* Ultra-compact card for small phone screens */
+  .stack-card {
+    top: 64px !important;
+    scroll-margin-top: 64px;
+    padding: 0.85rem 0.85rem 1rem;
+    border-radius: 16px;
+    margin-bottom: 1.75rem;
+  }
+
+  .stack-hero-preview {
+    height: 145px;
+    border-radius: 10px;
+  }
+
+  .stack-preview-img {
+    height: 72px;
+    border-radius: 8px;
+  }
+
+  .stack-details-row {
+    padding: 0.65rem 0.75rem;
+    gap: 0.45rem 0.65rem;
+  }
+
+  .detail-item .d-label {
+    font-size: 0.58rem;
+  }
+
+  .detail-item .d-val {
+    font-size: 0.75rem;
   }
 
   .exp-counter-card {
