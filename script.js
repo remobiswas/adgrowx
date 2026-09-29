@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cache section layout metrics on resize instead of recalculating on every scroll event
     let sectionCache = [];
     const cacheSectionMetrics = () => {
-        const sectionIds = ['cinematic', 'about', 'services', 'brands', 'projects', 'testimonials', 'contact'];
+        const sectionIds = ['cinematic', 'about', 'services', 'brands', 'projects', 'testimonials', 'faq', 'contact'];
         sectionCache = sectionIds.map(id => {
             const el = document.getElementById(id);
             if (!el) return null;

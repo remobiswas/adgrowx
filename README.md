@@ -40,15 +40,45 @@ Open your browser and navigate to:
 ## 📁 File Structure
 
 ```text
-├── index.html           # Semantic HTML5 structure, HUD scenes & agency sections
-├── style.css            # Responsive CSS design system, glassmorphic tokens & keyframes
-├── script.js            # 60fps lerp canvas coordinator, HUD transitions & event handlers
+├── index.html           # Flagship homepage with semantic HTML5, JSON-LD Schema & HUD scenes
+├── 404.html             # Branded 404 error page with internal navigation recovery
+├── robots.txt           # Search crawler directives & XML sitemap reference
+├── sitemap.xml          # Comprehensive XML sitemap containing all 13 canonical routes
+├── style.css            # Responsive CSS design system, glassmorphic tokens & SEO styles
+├── script.js            # 60fps lerp canvas coordinator, HUD transitions & scroll-spy
+├── services/            # Dedicated SEO landing pages for each core service vertical
+│   ├── digital-marketing.html
+│   ├── social-media-marketing.html
+│   ├── seo.html
+│   ├── meta-ads.html
+│   ├── google-ads.html
+│   ├── website-development.html
+│   ├── ecommerce-development.html
+│   ├── lead-generation.html
+│   ├── performance-marketing.html
+│   ├── email-marketing.html
+│   ├── content-marketing.html
+│   └── influencer-marketing.html
+├── assets/              # Icons, favicons, OG preview graphics, service & project assets
+│   ├── favicon.svg      # Modern scalable vector favicon
+│   ├── og-image.jpg     # 1200x630 Open Graph & Twitter card preview banner
+│   └── ...
 ├── frames/              # 240 1080p frames for the scroll-based visual stage
 │   ├── video_frames_webp/ # High-performance WebP sequence (~13.6MB total)
 │   └── video_frames_png/  # Lossless PNG fallback
 ├── website screenshot/  # Reference visual UI mockups & components
 └── .gitignore           # Ignores large archive files
 ```
+
+---
+
+## 🔍 SEO & Technical Architecture Highlights
+
+- **Semantic Hierarchy**: Single, prominent `<h1>` covering core brand, service, and regional intent with structured `<h2>` and `<h3>` tags throughout.
+- **Topical Authority**: Comprehensive service expansions detailing audience, deliverables, problems solved, 5-stage methodology, and zero false promises.
+- **Regional & Global Coverage**: Contextual targeting for Kolkata, Howrah, Siliguri, Durgapur, Asansol, Bardhaman, Bongaon, Barasat, Kalyani, and West Bengal; Pan-India national expansion; and transparent USA/international remote client partnerships.
+- **Valid JSON-LD Structured Data**: Full implementation of `WebSite`, `ProfessionalService`, `Organization`, `Service`, `BreadcrumbList`, and `FAQPage` schemas based strictly on authentic business details.
+- **Performance & Core Web Vitals**: Zero layout shift (CLS), preloaded critical assets, WebP image formats, responsive picture elements, and hardware-accelerated animations.
 
 ---
 
